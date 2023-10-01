@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Food - TAR Cinemas</title>
+        <link rel="stylesheet" href="../css/general_style.css">
+        <link rel="stylesheet" href="../css/food.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+    </head>
+
+    
+<nav>
+	<div>
+		<div class="topnav" id="myTopnav">
+			<ul>
+				<ul>
+					<li class="logo_bg" style="float:left;">
+						<a href="index.html" class="logo_header" class="active" width="100%">
+						  <span>TAR</span>Cinemas&#174
+						</a>
+						<!-- <a href="index.html" class="logo_header" class="active" width="150%">
+							<img src="images/tarc_logo.png" height="150px">
+						</a> -->
+					</li>
+					<div style="float:right;">
+						<li><a href="html/movies.html">Movies</a></li>
+						<li><a href="html/food.html">Food</a></li>
+						<li><a href="html/cinemas.html">Cinemas</a></li>
+						<li class="dropdown">
+							<a href="javascript:void(0)" class="dropbtn">
+								About
+							</a>
+							<div class="dropdown-content">
+								<a href="html/customer_service.html" target="_blank">Customer Service</a>
+								<a href="html/faq.html" target="_blank">FAQs</a>
+							</div>
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+						</li>
+						 <!-- <li><a><input id="search-bar"type="text" placeholder="Movies/Cinemas"></a></li>    -->
+						 <li>
+							<a href="html/profileDetails.html" class="profile_imgButton"><img src="images/profile_icon.png" alt="" height="25px"></a>
+						 </li>
+						 <li>
+							<a href="html/sign_in.html" target="_blank" class="buyNow_button" id="navSign_button"
+							class="moviePosterContainer_overlayText">Sign in</a>
+						 </li>
+					</div>
+				</ul>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+    <body>
+        <header>
+            <div class="nav container">
+                <a href="#" class="logo">TARCinemas</a>
+                <i class='bx bx-shopping-bag' id="carticon"></i>
+
+                <div class="cart">
+                    <h2 class="carttittle">Add To Cart</h2>
+                    
+                    <div class="cartcontent">
+                        
+                    </div>
+                    
+                    <div class="total">
+                        <div class="totaltitle">Total</div>
+                        <div class="totalprice">RM 0</div>
+                    </div>
+
+                    <a href="../html/payment.html">
+                        <button type="button" class="paymentbtn">Payment</button>
+                    </a>
+
+                    <i class='bx bx-x' id="quit"></i>
+
+
+
+                </div>
+            </div>
+        </header>
+
+        <section class="food container">
+            <h2 class="section-title">FOOD & DRINK</h2>
+            <div class="food-content">
+                <div class="food-box">
+                    <img src="../images/food/pop1.png" alt="Caremel Popcorn Regular" class="food-img">
+                    <h2 class="foodtitle">CAREMEL Popcorn Regular </h2>
+                    <span class="price">RM15</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/pop_caremel_l.png" alt="Caremel Popcorn Large" class="food-img">
+                    <h2 class="foodtitle">CAREMEL Popcorn Large </h2>
+                    <span class="price">RM18</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/pop_seasalt_r.png" alt="Seasalt Popcorn Regular" class="food-img">
+                    <h2 class="foodtitle">Seasalt Popcorn Regular </h2>
+                    <span class="price">RM15</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/pop_seasalt_r.png" alt="Seasalt Popcorn Large" class="food-img">
+                    <h2 class="foodtitle">Seasalt Popcorn Large </h2>
+                    <span class="price">RM18</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/newmixp.png" alt="Mix Popcorn Regular" class="food-img">
+                    <h2 class="foodtitle">Mix Popcorn Regular </h2>
+                    <span class="price">RM15</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/newmixp.png" alt="Mix Popcorn Large" class="food-img">
+                    <h2 class="foodtitle">Mix Popcorn Large </h2>
+                    <span class="price">RM18</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/hotdog_chicken.png" alt="Chicken Hotdog" class="food-img">
+                    <h2 class="foodtitle">Chicken Hotdog </h2>
+                    <span class="price">RM10</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/hotdog_beef.png" alt="Beef Hotdog" class="food-img">
+                    <h2 class="foodtitle">Beef Hotdog </h2>
+                    <span class="price">RM12</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/americano.png" alt="Americano" class="food-img">
+                    <h2 class="foodtitle">Americano </h2>
+                    <span class="price">RM10</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/latte.png" alt="Latte" class="food-img">
+                    <h2 class="foodtitle">Latte </h2>
+                    <span class="price">RM10</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/newlemontea.png" alt="Lemon Tea" class="food-img">
+                    <h2 class="foodtitle">Lemon Tea </h2>
+                    <span class="price">RM10</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/milo.png" alt="Milo" class="food-img">
+                    <h2 class="foodtitle">Milo </h2>
+                    <span class="price">RM10</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/mineral_water.png" alt="Mineral Water" class="food-img">
+                    <h2 class="foodtitle">Mineral Water </h2>
+                    <span class="price">RM5</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/comboA.png" alt="Combo A" class="food-img">
+                    <h2 class="foodtitle">Combo A </h2>
+                    <h3 class="fooddetails">1 X Regular Popcorn , 1 X Drink</h3>
+                    <span class="price">RM20</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/comboA.png" alt="Combo B" class="food-img">
+                    <h2 class="foodtitle">Combo B </h2>
+                    <h3 class="fooddetails">1 X Large Popcorn , 1 X Drink </h3>
+                    <span class="price">RM24</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/SuppercomboA.png" alt="Supper Combo A" class="food-img">
+                    <h2 class="foodtitle">Super Combo A </h2>
+                    <span class="price">RM26</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <div class="food-box">
+                    <img src="../images/food/suppercomboB.png" alt="Supper Combo B" class="food-img">
+                    <h2 class="foodtitle">Supper Combo B </h2>
+                    <span class="price">RM26</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="calculator">
+            <h4 class="CalculatorTitle">Popcorn Calculator</h4>
+            <a href="../html/popcorn_calculator.html"><i class='bx bxs-calculator cbutton' ></i></a>
+            <h5 class="calculatorDetails">Click This Button to Start Your Calculation!</h5>
+        </div>
+
+        <script src="../js/food.js"></script>      
+    </body>
+
+    <br><br><hr>
+ 
+    <footer>
+        <!-- Company Information -->
+        <center>
+            <div>
+                <a href="index.html" id="logo_footer" class="active" width="100px">
+                    <span>TAR</span>Cinemas&#174
+                </a>
+                <p id="business_name">TAR Cinemas (Penang) Sdn. Bhd.
+                    <br>
+                    <span class="ssm_regNumber">195901000262 (8888-M)</span>
+                </p>
+                <p>
+                    <a id="address" target="_blank"
+                        href="https://www.google.com/maps/place/Tunku+Abdul+Rahman+University+College/@3.2161697,101.7268329,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc3843bfb6a031:0x2dc5e067aae3ab84!8m2!3d3.2161643!4d101.7290216">
+                        77, Lorong Lembah Permai 3,
+                        <br>
+                        11200 Tanjung Bungah,
+                        <br>
+                        Pulau Pinang, Malaysia.
+                    </a>
+                </p>
+            </div>
+        </center>
+        <br>
+        <div>
+            <center>
+                <table class="socialMedia_container">
+                    <tr>
+                        <td>
+                            <h3>Follow Us On</h3>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="../images/facebook.png" alt="Facebook" height="30px">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://twitter.com/?lang=en" target="_blank">
+                                <img src="../images/twitter.png" alt="Twitter" height="30px">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                                <img src="../images/instagram.png" alt="Instagram" height="30px">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    
+        <hr>
+    
+        <center>
+            <h5>
+                Copyright &#169; 2023 TAR Cinemas (Penang) Sdn. Bhd.
+                <br>
+                All rights reserved.
+            </h5>
+        </center>
+        <hr>
+        <br>
+    </footer>
+ 
+</html>
