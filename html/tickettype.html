@@ -8,6 +8,7 @@
     <script src="/TARCinemas/js/tickettype.js"></script>
     <link rel="stylesheet" href="/TARCinemas/css/general_style.css">
     <link rel="stylesheet" href="/TARCinemas/css/navigation.css">
+
 </head>
 <body>
     <nav>
@@ -71,31 +72,31 @@
                     <tr>
                         <th>Kid (<13) : </th>
                         <td></td>
-                        <th><input type="number" value="0" max="10" min="0"></th>
+                        <th><input id="kid" type="number" value="0" max="10" min="0"></th>
                         <th>+ RM10.00</th>
                     </tr>
                     <tr>
                         <th>Adult: </th>
                         <td></td>
-                        <th><input type="number" value="0" max="10" min="0"></th>
+                        <th><input id="adult" type="number" value="0" max="10" min="0"></th>
                         <th>+ RM18.00</th>
                     </tr>
                     <tr>
                         <th>Student: </th>
                         <td></td>
-                        <th><input type="number" value="0" max="10" min="0"></th>
+                        <th><input id="stud" type="number" value="0" max="10" min="0"></th>
                         <th>+ RM12.00</th>
                     </tr>
                     <tr>
                         <th>Senior / OKU: </th>
                         <td></td>
                         <th>
-                            <input type="number" value="0" max="10" min="0">
+                            <input id="senior" type="number" value="0" max="10" min="0">
                         </th>
                         <th>+ RM10.00</th>
                     </tr>
                 </table>
-                <button style="margin-left: 28%;" id="payment" onclick="payment()">Proceed to Payment</button>
+                <button style="margin-left: 28%;" id="payment" onclick="proceed()">Proceed</button>
             </form>
             <span style="flex: 1;"></span>
         </div>
