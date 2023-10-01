@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Food - TAR Cinemas</title>
         <link rel="stylesheet" href="../css/general_style.css">
+        <link rel="stylesheet" href="../css/navigation.css">
         <link rel="stylesheet" href="../css/food.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         
@@ -12,7 +14,49 @@
     <body>
         <header>
             <div class="nav container">
-                <a href="#" class="logo">TARCINEMA</a>
+                <nav>
+                    <div>
+                        <div class="topnav" id="myTopnav">
+                            <ul>
+                                <ul>
+                                    <li class="logo_bg" style="float:left;">
+                                        <a href="index.html" class="logo_header" class="active" width="100%">
+                                          <span>TAR</span>Cinemas&#174
+                                        </a>
+                                        <!-- <a href="index.html" class="logo_header" class="active" width="150%">
+                                            <img src="images/tarc_logo.png" height="150px">
+                                        </a> -->
+                                    </li>
+                                    <div style="float:right;">
+                                        <li><a href="../html/movies.html" target="_blank">Movies</a></li>
+                                        <li><a href="../html/food.html" target="_blank">Food</a></li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0)" class="dropbtn">
+                                                About
+                                            </a>
+                                            <div class="dropdown-content">
+                                                <a href="../html/customer_service.html" target="_blank">Contact Us</a>
+                                                <a href="../html/faq.html" target="_blank">FAQs</a>
+                                            </div>
+                                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                                        </li>
+                                         <!-- <li><a><input id="search-bar"type="text" placeholder="Movies/Cinemas"></a></li>    -->
+                                         <li>
+                                            <a href="../html/profileDetails.html"><img src="../images/profile_icon.png" alt="" height="25px"></a>
+                                         </li>
+                                         <li>
+                                            <a href="../html/sign_in.html" target="_blank" class="buyNow_button"
+                                            class="moviePosterContainer_overlayText" style="color: black;">Sign in</a>
+                                         </li>
+                                    </div>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- <a href="#" class="logo">TARCINEMA</a> -->
+
                 <i class='bx bx-shopping-bag' id="carticon"></i>
 
                 <div class="cart">
@@ -27,7 +71,9 @@
                         <div class="totalprice">RM 0</div>
                     </div>
 
-                    <button type="button" class="paymentbtn">Payment</button>
+                    <a href="../html/payment.html">
+                        <button type="button" class="paymentbtn">Payment</button>
+                    </a>
 
                     <i class='bx bx-x' id="quit"></i>
                 </div>
@@ -35,7 +81,7 @@
         </header>
 
         <section class="food container">
-            <h2 class="section-title">FOOD & DRINK</h2>
+            <h2 class="section-title" style="padding-top: 35px;">FOOD & DRINK</h2>
             <div class="food-content">
                 <div class="food-box">
                     <img src="../images/food/pop1.png" alt="Caremel Popcorn Regular" class="food-img">
@@ -157,13 +203,16 @@
                     <span class="price">RM26</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
-
             </div>
         </section>
 
+        <hr><br>
+
         <div class="calculator">
             <h4 class="CalculatorTitle">Popcorn Calculator</h4>
-            <i class='bx bxs-calculator cbutton' ></i>
+            <a href="../html/popcorn_calculator.html" target="_blank">
+                <i class='bx bxs-calculator cbutton' ></i>
+            </a>            
             <h5 class="calculatorDetails">Click This Button to Start Your Calculation!</h5>
         </div>
 
