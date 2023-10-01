@@ -1,104 +1,27 @@
+@charset "utf-8";
 
-body {
-  max-width: 1024px;
-  /* margin: 0 auto; */
-  /* padding: 0 20px; */
-  /* box-sizing: border-box; */
-}
-
-body {
-  max-height: 768px;
-  /* overflow: auto; */
-}
-
-img {
-  max-width: 1024px;
-  max-height: 768px;
-}
-
-
-/* TAB LAYOUT */
-
-.tabs {
-  display: flex; 
-  list-style: none;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+/* TAB LAYOUT's Movie Poster */
+.movie_poster_region {
   width: 100%;
   margin: auto;
-}
-
-.tab {
-  cursor: pointer;
-  padding: 10px 20px;
-  /* background-color: #4E214F; */
-  /* border: 1px solid #EFEDFF; */
-  border-radius: 5px 5px 0 0;
-  margin-right: 10px;
-}
-
-.tab.active {
-  /* background-color: #4E214F; */
-  border-bottom: 3px solid #fff100;
-}
-
-.tab_content {
-  display: none;
-  padding: 20px;
-  border-radius: 0 0 5px 5px;
-}
-
-.tab_content.active {
-  display: block;
-}
-  
-div.active {
-  color: #fff100;
-}
-
-div.tab_content > p {
-  color: #EFEDFF;
-}
-
-/* #tab1, #tab2, #tab3, #tab4 { */
-.tab_content {
   justify-content: center;
-}
-
-.tab3_title {
-  text-decoration: none;
-}
-
-.movie_poster_region {
-  margin: auto;
-  align-items: center;
-}
-
-.movie_poster_row {
-  /* float: left; */
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  /* margin-top: 20px; */
 }
 
 .movie_poster_column {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  float: left;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  width: 25%;
 }
 
 .movie_poster_container {
   display: flex;
   position: relative;
-  width: 250px;
+  width: 100%;
   overflow: hidden;
-  margin: 10px 10px;
-  border-radius: 20px;
+  border: solid white; 
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .movie_poster_container > img {
@@ -106,11 +29,11 @@ div.tab_content > p {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  border-radius: 15px;
 }
 
-.movie_poster_container:hover img {
+.movie_poster_container:hover{
   transform: scale(1.02);
-  border-radius: 20px;
 }
 
 .moviePosterContainer_overlayText {
@@ -127,12 +50,11 @@ div.tab_content > p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  font-size: 15px;
 }
 
 .movie_poster_container:hover .moviePosterContainer_overlayText {
   opacity: 1; /* Show the text on hover */
-  border: 3px solid #EFEDFF;
 }
 
 .moviePosterDetails {
@@ -144,44 +66,10 @@ div.tab_content > p {
   border: #EFEDFF;
 }
 
-.movie_poster_container > table > tr > td > a {
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#tab1 {
-  /* display: flex; */
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-#tab4 {
-  /* display: flex; */
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-
-#tab3 {
-  text-align: center;
-  max-width: 700px;
-  position: relative;
-  margin: auto;
-}
-
-#movieRanking > tr > th {
-  width: 500px;
-}
-
-/* BUY NOW's button */
 .buyNow_button
 {
-  color: #00042c;
-  background-color: #F6B162;
+  color: orange;
+  background-color: rgb(34, 34, 34);
   font-family: 'Tcfont-Black';
   font-size: 16px;
   border-radius: 20px;
@@ -203,19 +91,13 @@ div.tab_content > p {
 
 .buyNow_button:hover
 {
-  color: #00042c;
-  background: #F6B162;
-  box-shadow: 0 0 25px #edb06a,
-              0 0 25px #edb06a,
-              0 0 25px #edb06a;
+  color: black;
+  background: orange;
+  box-shadow: 0 0 25px orange;
   cursor: pointer;
   transform: scale(1.01);
   transition-delay: 0.10s;
 }                                   /* BUY NOW's button - Finished */
-
-.item_paddingBottom {
-  padding-bottom: 20px;
-}
 
 footer {
   display: block;
