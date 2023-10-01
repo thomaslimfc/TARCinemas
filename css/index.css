@@ -314,14 +314,15 @@ div.tab_content > p {
     transition-delay: 0.10s;
 }                                   /* BUY NOW's button - Finished */
 
-
-
 .item_paddingBottom {
     padding-bottom: 20px;
 }
 
 footer {
+    float: left;
+    padding-left: 300px;
+    align-items: center;
     display: block;
     padding-top: 20px;
-    margin: 1000px;
+    /* margin: 1000px; */
 }
