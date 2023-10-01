@@ -21,6 +21,7 @@ container.addEventListener("click", (x) => {
 
 function proceed(){
     if(numselect != 0){
+        localStorage.setItem("ticketnum",numselect);
         numselect = 0;
         location.href = "/TARCinemas/html/tickettype.html";
     }
