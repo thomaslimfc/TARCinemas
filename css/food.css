@@ -1,0 +1,254 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    background-color: #111111;
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+section{
+    padding: 4rem 0 3rem;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#111111;
+    z-index: 100;
+ 
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 ;
+    color: #EFEDFF;
+
+}
+
+.logo{
+    font-size: 1.5rem;
+    color:#EFEDFF ;
+    font-weight: 500;
+}
+
+#carticon{
+    font-size:3rem ;
+    cursor: pointer;
+    color: #EFEDFF;
+}
+
+  
+.section-title{
+    font-size: 3.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom:1.5rem ;
+    color: #EFEDFF;
+}  
+
+.food{
+    margin-top: 2rem;
+}
+
+.food-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 1.5rem;
+}
+
+.food-box{
+    position: relative;
+}
+
+.food-box:hover{
+    padding: 10px;
+    border: 1px solid orange;
+    transition: 0.4s;
+}
+
+.food-img{
+    width: 100%;
+    height: 200px;;
+    margin-bottom: 0.5rem;
+}
+
+.foodtitle{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#EFEDFF;
+}
+.price{
+    font-weight: 400;
+    color:#EFEDFF;
+}
+
+.fooddetails{
+    font-size:0.9rem ;
+    font-weight: 30;
+    color: #EFEDFF;
+}
+
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: grey;
+    color: #EFEDFF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-cart:hover{
+    background-color:#EFEDFF ;
+    color:grey ;
+}
+
+/*cart*/
+.cart{
+    position: fixed;
+    top: 0;
+    right:-100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color:#111111;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+
+/*button putinside*/
+.cart.active{
+    right: 0;
+}
+
+
+.carttittle{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.cartbox{
+    display: grid;
+    grid-template-columns: 40% 50% 18%;
+    align-items: center;
+}
+
+.cartimg{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detailbox{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cartfoodtittle{
+    font-size: 1rem;
+}
+
+.cartprice{
+    font-size: 500;
+}
+
+.cartquantity{
+    border: 1px solid gold;
+    outline-color: red;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #EFEDFF;
+}
+
+.cartremove{
+    font-size:24px;
+    color: red;
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid #EFEDFF
+}
+
+.totalprice{
+    margin-left:0.5rem;
+}
+
+.paymentbtn{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: red;
+    color: #EFEDFF;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.paymentbtn:hover{
+    background: rgb(210, 36, 47);
+}
+
+#quit{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: #EFEDFF;
+    cursor: pointer;
+}
+
+.calculator{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.CalculatorTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#EFEDFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cbutton{
+    background-color: grey;
+    color: #EFEDFF;
+
+}
+.cbutton:hover{
+    background-color:#EFEDFF ;
+    color:grey ;
+}
+
+
+.calculatorDetails{
+    font-size:1rem ;
+    font-weight: 30;
+    color: #EFEDFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
