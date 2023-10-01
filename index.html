@@ -1194,11 +1194,6 @@
 		</table>
 	</div>
 	</center>
-
-	<audio controls autoplay hidden>
-		<source src="../media/fredji.mp3" type="audio/mp3">
-		<source src="../media/fredji.wav" type="audio/wav">
-	</audio>
 </body>
 
 <!-- BANNER SLIDESHOW -->
@@ -1311,6 +1306,25 @@
 			Copyright &#169; 2023 TAR Cinemas (Penang) Sdn. Bhd.
 			<br>
 			All rights reserved.
+
+			<br>
+			<hr>
+			<br>
+
+			<h4>Switch on the song below if you wish to hear music!</h4>
+
+			<audio id="myAudio" controls>
+				<source src="media/fredji.mp3" type="audio/mpeg">
+				<source src="media/fredji.wav" type="audio/wav">
+			</audio>
+			
+			<script>
+				// JavaScript to autoplay the audio after a user interaction
+				document.addEventListener("DOMContentLoaded", function () {
+					var audio = document.getElementById("myAudio");
+					audio.play();
+				});
+			</script>
 		</h5>
 	</center>
 	<hr>
