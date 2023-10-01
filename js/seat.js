@@ -22,7 +22,7 @@ container.addEventListener("click", (x) => {
 function proceed(){
     if(numselect != 0){
         numselect = 0;
-        location.href = "/TARCINEMA/html/tickettype.html";
+        location.href = "/TARCinemas/html/tickettype.html";
     }
     else {
         alert("Please select atlease one seat!");
