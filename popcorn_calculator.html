@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Popcorn Size Calculator</title>
+    <link rel="stylesheet" href="../css/general_style.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/popcorn_calculator.css">
+	<script src="../js/popcorn_calculator.js"></script>
+</head>
+<nav>
+	<div>
+		<div class="topnav" id="myTopnav">
+			<ul>
+				<ul>
+					<li class="logo_bg" style="float:left;">
+						<a href="index.html" class="logo_header" class="active" width="100%">
+						  <span>TAR</span>Cinemas&#174
+						</a>
+						<!-- <a href="index.html" class="logo_header" class="active" width="150%">
+							<img src="images/tarc_logo.png" height="150px">
+						</a> -->
+					</li>
+					<div style="float:right;">
+						<li><a href="../html/movies.html" target="_blank">Movies</a></li>
+						<li><a href="../html/food.html" target="_blank">Food</a></li>
+						<li class="dropdown">
+							<a href="javascript:void(0)" class="dropbtn">
+								About
+							</a>
+							<div class="dropdown-content">
+								<a href="../html/customer_service.html" target="_blank">Contact Us</a>
+								<a href="../html/faq.html" target="_blank">FAQs</a>
+							</div>
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+						</li>
+						 <!-- <li><a><input id="search-bar"type="text" placeholder="Movies/Cinemas"></a></li>    -->
+						 <li>
+							<a href="../html/profileDetails.html"><img src="../images/profile_icon.png" alt="" height="25px"></a>
+						 </li>
+						 <li>
+							<a href="../html/sign_in.html" target="_blank" class="buyNow_button"
+							class="moviePosterContainer_overlayText" style="color: black;">Sign in</a>
+						 </li>
+					</div>
+				</ul>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<body>
+    <h1>Popcorn Size Calculator</h1>
+    <p>Calculate and determine the ideal amount of popcorn kernels needed to produce a desired quantity of popcorn.</p>
+
+    <br><br>
+
+    <form>
+        <div class="form_group">
+            <input type="number" id="no_of_people" class="form_field" min="1" placeholder="e.g. 5" required>
+            <span>people</span>
+        </div>
+
+        <br>
+
+        <div class="form_group calculate_btn_div">
+            <button class="calculate_btn" type="button" onclick="calculation()">CALCULATE</button>
+        </div>
+
+        <div class="reset_btn_div">
+            <input class="reset_btn" type="reset" value="RESET" onclick="resetResults()">
+        </div>
+    </form>
+
+    <div id="results" style="display: none;">
+        <h2>Popcorn Quantity suggested according to its Size</h2>
+        <center>
+            <table>
+                <tr class="title_row">
+                    <th>Possible Outcomes</th>
+                    <th>Popcorn Size</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr class="odd_row">
+                    <td class="td_first_column">Case 1</td>
+                    <td class="td_second_column">Small</td>
+                    <td class="td_third_column">
+                        <span id="small"></span>
+                    </td>
+                </tr>
+                <tr class="even_row">
+                    <td class="td_first_column">Case 2</td>
+                    <td class="td_second_column">Medium</td>
+                    <td class="td_third_column">
+                        <span id="medium"></span>
+                    </td>
+                </tr>
+                <tr class="odd_row">
+                    <td class="td_first_column">Case 3</td>
+                    <td class="td_second_column td">Large</td>
+                    <td class="td_third_column">
+                        <span id="large"></span>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+
+    <br><br><br>
+
+    <img src="../images/go_green.jpeg" alt="Go Green" height="170px">
+    <p>Let's take the initiative to prevent food wastage!</p>
+
+    <br><br>
+</body>
+
+<footer>
+	<!-- Company Information -->
+	<center>
+		<div>
+			<a href="index.html" id="logo_footer" class="active" width="100px">
+				<span>TAR</span>Cinemas&#174
+			</a>
+			<p id="business_name">TAR Cinemas (Penang) Sdn. Bhd.
+				<br>
+				<span class="ssm_regNumber">195901000262 (8888-M)</span>
+			</p>
+			<p>
+				<a id="address" target="_blank"
+					href="https://www.google.com/maps/place/Tunku+Abdul+Rahman+University+College/@3.2161697,101.7268329,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc3843bfb6a031:0x2dc5e067aae3ab84!8m2!3d3.2161643!4d101.7290216">
+					77, Lorong Lembah Permai 3,
+					<br>
+					11200 Tanjung Bungah,
+					<br>
+					Pulau Pinang, Malaysia.
+				</a>
+			</p>
+		</div>
+	</center>
+    
+	<hr>
+
+	<center>
+		<h5>
+			Copyright &#169; 2023 TAR Cinemas (Penang) Sdn. Bhd.
+			<br>
+			All rights reserved.
+		</h5>
+	</center>
+	<hr>
+	<br>
+</footer>
+</html>
