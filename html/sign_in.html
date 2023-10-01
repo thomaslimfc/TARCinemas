@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In - TARCinemas</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sign_style.css">
+    <script src="../js/sign_in.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SIGN IN</h1>
+
+        <form id="signin_form" action="">
+            <div class="form">
+                <div class="input_box">
+                    <img src="../images/username_icon.png" class="sign_icon">
+    
+                    <input type="text"
+                    pattern="[A-Za-z0-9]{5,}"
+                    id="username" name="username"
+                    title="Must contain at least 5 characters without any symbol."
+                    placeholder="Enter username" required>
+                </div>
+          
+                <div class="input_box">
+                    <img src="../images/lock_icon.png" class="sign_icon">
+
+                    <input type="password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
+                    id="password" name="password"
+                    title="Must contain at least 1 number, 1 uppercase, 1 lowercase, and at least 10 or more characters."
+                    placeholder="Type password" oninput="toggleEyeVisibility()" required>
+                </div>
+          
+                <div class="options">
+                    <div class="remember-me">
+                        <input id="remember-me" type="checkbox" required>
+                        <label for="remember-me">Remember me?</label>
+                    </div>
+    
+                    <div class="forgot-password">
+                        <a href="../html/forgot_password.html">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+    
+            <a>
+                <button id="sign_btn" class="sign_btn">Sign in</button>
+            </a>
+
+            <div id="acc1">
+                <p>
+                    <a id="acc">Don't have an account?</a>
+                    <a href="../html/sign_up.html">Sign up now!</a>
+                </p>
+            </div>
+        </form>
+
+        <p id="message"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+
+* {
+    font-family: "Tcfont-Bold";
+}
+
+                    /* Loading Custom Fonts */
+@font-face
+{
+    font-family: 'Tcfont-Regular';
+    src: url('../font/Bambino_W00_Regular.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Regular.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Regular.ttf') format('truetype');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Bold';
+    src: url('../font/Bambino_W00_Bold.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Bold.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Bold.ttf') format('truetype');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Black';
+    src: url('../font/Bambino_W00_Black.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Black.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Black.ttf') format('truetype');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Black-Italic';
+    src: url('../font/Bambino_W00_Black_Italic.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Black_Italic.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Black_Italic.ttf') format('truetype');       /* Safari, Android, iOS */
+}                               /* Loading Custom Fonts - Finished */
+
+body {
+    background-color: rgb(85, 53, 17);
+}
+
+h1 {
+    color: rgb(85, 53, 17);
+    /* color: #00042c; */
+    font-family: "Tcfont-Black";
+    text-align: center;
+}
+
+.container {
+    margin: 200px auto;
+    width: 350px;
+    background-color: #fff5f5;
+    padding: 60px;
+    border-radius: 11px;
+}
+
+input {
+    font-style: normal;
+}
+
+.input_box {
+    display: block;
+    border-radius: 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff5f5;
+}
+
+.sign_icon {
+    height: 23px;
+    padding-left: 13px;
+    padding-right: 11px;
+}
+
+svg {
+    stroke-width: 1%;
+    stroke: #00042c;
+}
+
+/* svg {
+    right: 12px;
+    top: calc(50% - 3px);
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #757575;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+} */
+
+.form svg {
+    height: 25px;
+    margin-bottom: -5px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.form input {
+    font-size: 18px;
+    padding: 10px 20px 10px 5px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* forgot_password */
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0px;
+    margin-bottom: 30px;
+    cursor:pointer;
+}
+
+button.sign_btn {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: rgb(197, 120, 31);
+    color: #fff5f5;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+button.sign_btn:hover {
+    background-color: rgb(195, 136, 69);
+}
+
+.new_to_tc .terms_privacy {
+    padding-top: 15px;
+    text-align: center;
+}
+
+select {
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 160px;
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px -2px #9098A9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+    &:required: invalid;
+    color: #5A667F;
+}
+
+.gender_selectbox {
+    padding-right: 25px;
+}
+
+.city_selectbox {
+    padding-right: 52px;
+}
+
+#acc1 {
+    /* padding-top: 20px; */
+    text-align: center;
+}

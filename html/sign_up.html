@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - TARCinemas</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sign_style.css">
+    <script src="js/sign_up.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h1>SIGN UP</h1>
+        </center>
+        <form id="signup_form" action="../sign_up.php">
+            <div class="form">
+                <div class="input_box">
+                    <img src="../images/username_icon.png" class="sign_icon">
+
+                    <input type="text"
+                    pattern="[A-Za-z0-9]{5,}"
+                    id="username" name="username"
+                    title="Must contain at least 5 characters without any symbol."
+                    placeholder="Enter username" required>
+                </div>
+    
+                <div class="input_box">
+                    <img src="../images/mail_icon.png" class="sign_icon">
+
+                    <input type="email"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2.}$"
+                    id="email" name="email"
+                    title="Must be a valid email."
+                    placeholder="Enter email" required>
+                </div>
+    
+                <div class="input_box">
+                    <img src="../images/lock_icon.png" class="sign_icon">
+
+                    <input type="password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
+                    id="password" name="password"
+                    title="Must contain at least 1 number, 1 uppercase, 1 lowercase, and at least 10 or more characters."
+                    placeholder="Type password" oninput="toggleEyeVisibility()" required>
+                </div>
+    
+                <div class="input_box">
+                    <img src="../images/lock_icon.png" class="sign_icon">
+
+                    <input type="password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
+                    id="password_confirmation" name="password_confirmation" title="Must contain at least 1 number, 1 uppercase, 1 lowercase, and at least 10 or more characters."
+                    placeholder="Re-Type password" oninput="toggleEyeVisibility()" required>
+                </div>
+    
+                <div class="input_box">
+                    <img src="../images/cake_icon.png" class="sign_icon">
+
+                    <input type="date" id="date" name="date" required>
+                </div>
+    
+                <div class="input_box">
+                    <img src="../images/gender_icon.png" class="sign_icon">
+                    <label for="gender" class="gender_selectbox">Gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+    
+                <div class="input_box">
+                    <img src="../images/location_icon.png" class="sign_icon">
+                    <label for="city" class="city_selectbox">City:</label>
+                    <select name="city" id="city">
+                        <option value="Selangor">Selangor</option>
+                        <option value="Penang">Penang</option>
+                        <option value="Johor">Johor</option>
+                        <option value="Malacca">Malacca</option>
+                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                        <option value="Pahang">Pahang</option>
+                        <option value="Perak">Perak</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Kelantan">Kelantan</option>
+                        <option value="Terengganu">Terengganu</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Sabah">Sabah</option>
+                        <option value="Sarawak">Sarawak</option>
+                    </select>
+                </div>
+    
+                <div class="options">
+                    <div class="remember-me terms_privacy">
+                        <input id="remember-me" type="checkbox" required>
+                        <label for="remember-me">
+                            By creating an account, you agree to our
+                            <a href="../terms_privacy.html" id="acc">
+                                Terms & Privacy.
+                            </a>
+                        </label>
+                    </div>
+                </div>
+                
+                <a>
+                    <button id="sign_btn" class="sign_btn">Sign up</button>
+                </a>
+
+                <div id="acc1">
+                    <p>
+                        <a id="acc">Already have an account?</a>
+                        <a href="../html/sign_in.html">Sign in here!</a>
+                    </p>
+                </div>
+            </div>
+    
+            <p id="message"></p>
+        </form>
+
+        
+</body>
+
+</html>

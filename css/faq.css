@@ -1,0 +1,87 @@
+* {box-sizing: border-box;}
+
+/* Loading Custom Fonts */
+@font-face
+{
+    font-family: 'Tcfont-Regular';
+    src: url('/TARCINEMA/font/Bambino_W00_Regular.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Regular.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Regular.ttf') format('ttf');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Bold';
+    src: url('/TARCINEMA/font/Bambino_W00_Bold.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Bold.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Bold.ttf') format('ttf');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Black';
+    src: url('/TARCINEMA/font/Bambino_W00_Black.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Black.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Black.ttf') format('truetype');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Black-Italic';
+    src: url('/TARCINEMAA/font/Bambino_W00_Black_Italic.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Black_Italic.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Black_Italic.ttf') format('truetype');       /* Safari, Android, iOS */
+} 
+
+/* body design */
+body{
+  background-color: black;
+  font-family: 'Tcfont-Black';
+}
+/* header design */
+header {
+  text-align: center;
+  color: #f6b162;
+}
+
+main {
+  max-width: 1024px;
+  /* max-height: 768px; */
+  margin: auto;
+  /* align-items: center; */
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    font-family: 'Tcfont-Black';
+  }
+  
+.active, .accordion:hover {
+ 
+  background-color: #f6b162;
+  color: #111111;
+}
+  
+.panel {
+  padding: 20px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: 'Tcfont-Black';
+}
+
+.panel p {
+  font-size: 25px;
+  font-family: 'Tcfont-Regular';
+}
+
+#logo_footer {
+background-color:black;
+}

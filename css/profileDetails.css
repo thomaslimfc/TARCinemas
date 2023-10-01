@@ -1,0 +1,436 @@
+.memberAccountside .separator {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-top: 40px;
+}
+
+.memberAccountside {
+  display: block;
+  float: left;
+  width: 20%;
+  background-color: #1e1c1b;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.accountMain {
+  display: block;
+  width: 60%;
+  float: left;
+  background-color: #0c0c09;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+.username{
+  color: white;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.memberLevel{
+  padding: 60px;
+  width: 30%;
+  border-right: 1px solid #a2aeae;
+  display: block;
+  float: left;
+}
+
+.memberLVL{
+padding: 60px;
+width: 70%;
+color: white;
+text-align: center;
+margin-left: 50px;
+}
+
+.profilePic {
+  display: block;
+  padding: 30px;
+}
+
+.profilePic figure img{
+  border-radius: 100%;
+  width: 100%;
+}
+
+.menuWrapper {
+  color: white;
+  float: left;
+  padding: 20px;
+}
+
+.wrapperTitle {
+  font-weight: bold;
+  display: block;
+  font-size: large;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.profile_d a{
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: #1e1c1b;
+  padding: 20px;
+}
+
+.profile_d a:hover{
+  background-color: #4b3f39;
+}
+
+.wrappers {
+  background-color: #1e1c1b;
+}
+
+.wrappers li {
+  display: block;
+  width:100%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.memberShip {
+  background-color: #1e1c1b;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.userDetails {
+  padding: 24px;
+  background-color: #1e1c1b;
+  border-radius: 20px;
+}
+
+label{
+  color: white;
+}
+
+.details_form input{
+  background-color: #616060;
+  color: white;
+  border: 1px solid gray;
+}
+.details_form input::placeholder {
+  color: white;
+}
+
+.infoinfo{
+  padding: 20px;
+}
+
+.infoinfo label{
+  padding: 10px;
+}
+
+form .infoinfo input,
+.infoinfo input, 
+.infoinfo select
+{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  border-radius: 3px;
+  padding: 8px 10.5px;
+  color: #b2b2b2;
+  background: 0 0;
+  border: 1px solid gray;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.button_edit{
+  display: block;
+  align-items: center;
+}
+
+.wrapper {
+  display: block;
+  position: absolute;
+  background-color: #1e1c1b;
+  width: 50%;
+  padding: 30px;
+  float: left;
+  border-radius: 20px;
+}
+
+.credit-card {
+  position: relative;
+  width: 350px;
+  height: 220px;
+  margin: auto;
+  transform-style: preserve-3d;
+  transition: 0.3s;
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(#fc8c36, #f97e20);
+  border-radius: 1em;
+  backface-visibility: hidden;
+}
+.card-front {
+  padding: 2em 1em;
+}
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.branding img {
+  width: 50px;
+  height: auto;
+}
+.card-back {
+  position: absolute;
+  transform: rotateY(180deg);
+}
+.card-number {
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  margin-top: 3em;
+}
+.details {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+  font-size: 0.8em;
+}
+.details span {
+  display: block;
+}
+.details #card-holder-name {
+  text-transform: uppercase;
+}
+.card-back .black-strip {
+  position: relative;
+  background-color: #000000;
+  height: 50px;
+  top: 2em;
+}
+.card-back .white-strip {
+  top: 3em;
+  position: relative;
+  text-align: right;
+}
+.card-back .white-strip span {
+  margin-right: 1em;
+}
+.card-back .white-strip div {
+  height: 30px;
+  background-color: #ffffff;
+  margin-top: 0.5em;
+}
+.card-back .visa-logo {
+  position: absolute;
+  width: 50px;
+  margin-top: 4em;
+  right: 1em;
+}
+form {
+  margin-top: 2em;
+}
+label,
+input {
+  display: block;
+}
+label {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+label {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+input {
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+}
+input:not(:last-child) {
+  margin-bottom: 1em;
+}
+form .date-cvv {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.ticketwrap {
+width: 250%;
+margin: 10px;
+color: #fff;
+font-family: sans-serif;
+background-color: #b2b2b2;
+}
+
+.ticket {
+background: #c85209;
+height: 350px;
+width: 15%;
+float: left;
+position: relative;
+padding: 20px;
+margin-top: 80px;
+color: #ecedef;
+}
+
+.ticketLeft {
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+padding: 30px;
+width: 500px;
+}
+
+.ticketRight {
+width: 10%;
+border-left: .18em dashed #fff;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+&:before,
+&:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: .9em;
+  height: .9em;
+  background: #fff;
+  border-radius: 50%;
+  left: -100px;
+}
+&:before {
+  top: -.4em;
+}
+&:after {
+bottom: -.4em;
+}
+}
+
+h1 {
+font-size: 1.1em;
+margin-top: 0;
+span {
+  font-weight: normal;
+}
+}
+
+.title, .name, .seat, .time {
+text-transform: uppercase;
+font-weight: normal;
+h2 {
+  font-size: .9em;
+  color: #525252;
+  margin: 0;
+ }
+span {
+  font-size: .7em;
+  color: #a2aeae;
+}
+}
+
+.title {
+margin: 2em 0 0 0;
+}
+
+.name, .seat {
+margin: .7em 0 0 0;
+}
+
+.time {
+margin: .7em 0 0 1em;
+}
+
+.seat, .time {
+float: left;
+}
+
+.eye {
+position: relative;
+width: 2em;
+height: 1.5em;
+background: #fff;
+margin: 0 auto;
+border-radius: 1em/0.6em;
+z-index: 1;
+&:before, &:after {
+  content:"";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+&:before {
+  width: 1em;
+  height: 1em;
+  background: #e84c3d;
+  z-index: 2;
+  left: 8px;
+  top: 4px;
+}
+&:after {
+width: .5em;
+height: .5em;
+background: #fff;
+z-index: 3;
+left: 12px;
+top: 8px;
+}
+}
+
+.number {
+text-align: center;
+text-transform: uppercase;
+h3 {
+  color: #e84c3d;
+  margin: .9em 0 0 0;
+  font-size: 2.5em;
+  
+}
+span {
+  display: block;
+  color: #a2aeae;
+}
+}
+
+.barcode {
+height: 2em;
+width: 0;
+margin: 150px 0 0 .8em;
+box-shadow: 1px 0 0 1px #343434,
+5px 0 0 1px #343434,
+10px 0 0 1px #343434,
+11px 0 0 1px #343434,
+15px 0 0 1px #343434,
+18px 0 0 1px #343434,
+22px 0 0 1px #343434,
+23px 0 0 1px #343434,
+26px 0 0 1px #343434,
+30px 0 0 1px #343434,
+35px 0 0 1px #343434,
+37px 0 0 1px #343434,
+41px 0 0 1px #343434,
+44px 0 0 1px #343434,
+47px 0 0 1px #343434,
+51px 0 0 1px #343434,
+56px 0 0 1px #343434,
+59px 0 0 1px #343434,
+64px 0 0 1px #343434,
+68px 0 0 1px #343434,
+72px 0 0 1px #343434,
+74px 0 0 1px #343434,
+77px 0 0 1px #343434,
+81px 0 0 1px #343434;
+}

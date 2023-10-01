@@ -1,0 +1,376 @@
+                                /* GENERAL */
+*{
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: "Tcfont-Bold";
+}
+
+                    /* Loading Custom Fonts */
+@font-face
+{
+    font-family: 'Tcfont-Regular';
+    src: url('../font/Bambino_W00_Regular.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Regular.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Regular.ttf') format('truetype');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Bold';
+    src: url('../font/Bambino_W00_Bold.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Bold.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Bold.ttf') format('truetype');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Black';
+    src: url('../font/Bambino_W00_Black.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Black.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Black.ttf') format('truetype');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Black-Italic';
+    src: url('../font/Bambino_W00_Black_Italic.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Black_Italic.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Black_Italic.ttf') format('truetype');       /* Safari, Android, iOS */
+}                               /* Loading Custom Fonts - Finished */
+
+.manipulated_variable
+{
+    font-weight: bold;
+    -webkit-appearance: none;
+}
+c
+/* Remove up-down arrow inside button */
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Works for Firefox */
+input[type="number"]
+{
+    -moz-appearance: textfield;
+}
+
+#results
+{
+    display: none;
+}
+
+img {
+    border-radius: 20px;
+}                                       /* GENERAL - Finished */
+
+
+
+                            /* Result's Table Design */
+.title_row
+{
+    background-color: #26890d;
+}
+.odd_row
+{
+    background-color: #ffffff;
+}
+.even_row
+{
+    background-color: #e0e0e0;
+}
+table
+{
+    border-color: #F06070;
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+.td_first_column
+{
+    width: 200px;
+    color: #00042c;
+}
+.td_second_column
+{
+    width: 150px;
+    color: #00042c;
+}
+.td_third_column
+{
+    width: 100px;
+    color: #00042c;
+}
+#small, #medium, #large {
+    font-family: "Tcfont-bold";
+    width: 100px;
+    color: #00042c;
+}
+.title_row
+{
+    color: #ffffff;
+}                                       /* Result's Table Design - Finished */
+
+
+
+                                        /* Input Box Design */
+:root
+{
+    --input-color: #99A3BA;
+    --input-border: #CDD9ED;
+    --input-background: #fff;
+    --input-placeholder: #CBD1DC;
+
+    --input-border-focus: #CEA716;
+
+    --group-color: var(--input-color);
+    --group-border: var(--input-border);
+    --group-background: #EEF4FF;
+
+    --group-color-focus: #00042c;
+    --group-border-focus: var(--input-border-focus);
+    --group-background-focus: #CEA716;		
+}
+    
+.form_field
+{
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border .3s ease;
+    &::placeholder
+    {
+        color: var(--input-placeholder);
+    }
+    &:focus
+    {
+        outline: none;
+        border-color: var(--input-border-focus);
+    }
+}
+    
+.form_group
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    & > span,
+    .form_field
+    {
+        white-space: nowrap;
+        display: block;
+        &:not(:first-child):not(:last-child)
+        {
+            border-radius: 0;
+        }
+        &:first-child
+        {
+            border-radius: 6px 0 0 6px;
+        }
+        &:last-child
+        {
+            border-radius: 0 6px 6px 0;
+        }
+        &:not(:first-child)
+        {
+            margin-left: -1px;
+        }
+    }
+    .form_field
+    {
+        position: relative;
+        z-index: 1;
+        flex: 1 1 auto;
+        width: 1%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    & > span
+    {
+        text-align: center;
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 25px;
+        color: var(--group-color);
+        background: var(--group-background);
+        border: 1px solid var(--group-border);
+        transition: background .3s ease, border .3s ease, color .3s ease;
+    }
+    &:focus-within
+    {
+        & > span
+        {
+            color: var(--group-color-focus);
+            background: var(--group-background-focus);
+            border-color: var(--group-border-focus);
+        }
+    }
+}
+
+html
+{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+*{
+    box-sizing: inherit;
+    &:before,
+    &:after
+    {
+        box-sizing: inherit;
+    }
+}
+
+/* Center */
+body
+{
+    min-height: 100vh;
+    /* font-family: 'Mukta Malar', Arial; */
+    font-family: Bambino;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: #F5F9FF; */
+    .form_group
+    {
+        max-width: 360px;
+        &:not(:last-child)
+        {
+            margin-bottom: 32px;
+        }
+    }
+}                                       /* Input Box Design - Finished */
+
+
+
+                                /* Neon Calculate Button Effect */
+/* .calculate_btn
+{
+    position: relative;
+    display: inline-block;
+    color: #F9F871;
+    font-family: Ubuntu;
+    font-family: Bambino;
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 3.5%;
+    margin-bottom: 2.5%;
+    padding: 15px 30px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: none;
+}
+.calculate_btn:hover
+{
+    color: #2F3300;
+    font-weight: bolder;
+    background: #F9F871;
+    box-shadow: 0 0 10px #F9F871,
+                0 0 40px #F9F871,
+                0 0 80px #F9F871;
+    transition-delay: 0.15s;
+}
+.calculate_btn span
+{
+    position: absolute;
+    display: block;
+} */
+                               /* Neon Calculate Button Effect - Finished */
+
+
+
+                    /* CALCULATE's button */
+.calculate_btn
+{
+    color: #00042c;
+    background-color: #CEA716;
+    font-family: 'Tcfont-Black';
+    font-size: 16px;
+    border-radius: 20px;
+    height: 100%;
+    margin: 5px 5px 0 5px;
+    padding: 15px 30px;
+    display: flex;
+    position: relative;
+    display: inline-block;
+    /* padding-right: 40px; */
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.calculate_btn:hover
+{
+    color: #00042c;
+    background: #CEA716;
+    box-shadow: 0 0 25px #e9c338,
+                0 0 25px #e9c338,
+                0 0 25px #e9c338;
+    cursor: pointer;
+    transform: scale(1.20);
+    transition-delay: 0.10s;
+}
+
+.calculate_btn_div {
+    padding-left: 45px;
+}                                   /* CALCULATE's button - Finished */
+
+
+
+                    /* RESET's button */
+.reset_btn
+{
+    color: #00042c;
+    background-color: #CEA716;
+    font-family: 'Tcfont-Black';
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 5px 5px 0 5px;
+    padding: 8px 15px;
+    display: flex;
+    position: relative;
+    display: inline-block;
+    /* padding-right: 40px; */
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.reset_btn:hover
+{
+    color: #00042c;
+    background: #CEA716;
+    box-shadow: 0 0 10px #e9c338,
+                0 0 10px #e9c338,
+                0 0 10px #e9c338;
+    cursor: pointer;
+    /* transform: scale(1.20); */
+    transition-delay: 0.10s;
+}
+
+.reset_btn_div {
+    padding-left: 85px;
+}                                   /* RESET's button - Finished */

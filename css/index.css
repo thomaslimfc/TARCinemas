@@ -1,0 +1,327 @@
+
+body {
+    max-width: 1024px;
+    /* margin: 0 auto; */
+    /* padding: 0 20px; */
+    /* box-sizing: border-box; */
+}
+
+body {
+    max-height: 768px;
+    /* overflow: auto; */
+}
+
+img {
+    max-width: 1024px;
+    max-height: 768px;
+}
+
+/* BANNER SLIDESHOW */
+.slideshow_slides {
+    display: none;
+}
+
+.slideshow_container > img {
+    vertical-align: middle;
+}
+
+.slideshow_container {
+    box-sizing: border-box;
+
+    display: block;
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    align-content: center;
+
+    max-width: 1024px;
+    max-height: 768px;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slideshow_numbering {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* .active {
+  background-color: #717171;
+} */
+
+.slideshow_fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+
+
+/* TAB LAYOUT */
+
+.tabs {
+    display: flex; 
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    /* background-color: #4E214F; */
+    /* border: 1px solid #EFEDFF; */
+    border-radius: 5px 5px 0 0;
+    margin-right: 10px;
+}
+
+.tab.active {
+    /* background-color: #4E214F; */
+    border-bottom: 3px solid #fff100;
+}
+
+.tab_content {
+    display: none;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.tab_content.active {
+    display: block;
+}
+    
+div.active {
+    color: #fff100;
+}
+
+div.tab_content > p {
+    color: #EFEDFF;
+}
+
+/* #tab1, #tab2, #tab3, #tab4 { */
+.tab_content {
+    justify-content: center;
+}
+
+.tab3_title {
+    text-decoration: none;
+}
+
+
+
+                    /* TAB LAYOUT's Movie Poster */
+.movie_poster_region {
+    margin: auto;
+    align-items: center;
+}
+
+.movie_poster_row {
+    /* float: left; */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* margin-top: 20px; */
+}
+
+.movie_poster_column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.movie_poster_container {
+    display: flex;
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    margin: 10px 10px;
+    border-radius: 20px;
+}
+
+.movie_poster_container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.movie_poster_container:hover img {
+    transform: scale(1.02);
+    border-radius: 20px;
+}
+
+.moviePosterContainer_overlayText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #EFEDFF;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.movie_poster_container:hover .moviePosterContainer_overlayText {
+    opacity: 1; /* Show the text on hover */
+    border: 3px solid #EFEDFF;
+}
+
+.moviePosterDetails {
+    text-align: left;
+}
+
+.movie_poster_container > table > tr > td {
+    text-align: left;
+    border: #EFEDFF;
+}
+
+.movie_poster_container > table > tr > td > a {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tab1 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#tab4 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+#tab3 {
+    text-align: center;
+        /* width: 50%;
+        height: 50%;
+        margin: auto;
+        align-items: center; */
+    
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+/* #tab4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+} */
+
+/* #tab4 .movie_poster_container{
+    margin: 10px;
+    text-align: center;
+} */
+
+
+
+#movieRanking > tr > th {
+    width: 500px;
+}
+                                   /* TAB LAYOUT's Movie Poster */
+
+
+
+                    /* BUY NOW's button */
+.buyNow_button
+{
+    color: #00042c;
+    background-color: #F6B162;
+    font-family: 'Tcfont-Black';
+    font-size: 16px;
+    border-radius: 20px;
+    height: 100%;
+    margin: 5px 5px 0 5px;
+    padding: 15px 30px;
+    display: flex;
+    position: relative;
+    display: inline-block;
+    /* padding-right: 40px; */
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.buyNow_button:hover
+{
+    color: #00042c;
+    background: #F6B162;
+    box-shadow: 0 0 25px #edb06a,
+                0 0 25px #edb06a,
+                0 0 25px #edb06a;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition-delay: 0.10s;
+}                                   /* BUY NOW's button - Finished */
+
+
+
+.item_paddingBottom {
+    padding-bottom: 20px;
+}
+
+footer {
+    display: block;
+    padding-top: 20px;
+    margin: 1000px;
+}
