@@ -101,9 +101,3 @@
   transform: scale(1.01);
   transition-delay: 0.10s;
 }                                   /* BUY NOW's button - Finished */
-
-footer {
-  display: block;
-  padding-top: 20px;
-  margin: 1000px;
-}
