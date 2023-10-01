@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/*HEADER DESIGN*/
+* {box-sizing: border-box;}
+
 /* TAB LAYOUT's Movie Poster */
 .movie_poster_region {
   width: 100%;
