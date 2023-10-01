@@ -1,5 +1,5 @@
 function buyticket(){
-    location.href = "/../../html/upcoming_buyticket.html";
+    location.href = "/TARCINEMA/html/upcoming_buyticket.html";
 }
 
 function disp(){
