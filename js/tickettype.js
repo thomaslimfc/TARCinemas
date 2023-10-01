@@ -1,3 +1,3 @@
 function payment(){
-        location.href = "../../html/cart.html";
+        location.href = "/TARCINEMA/html/cart.html";
 }
