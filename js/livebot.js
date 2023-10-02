@@ -1,13 +1,13 @@
-const liveInput = document.querySelector("live-input textarea");
-const sendLiveBtn = document.querySelector("live-input span");
+const liveInput = document.querySelector(".live-input textarea");
+const sendLiveBtn = document.querySelector(".live-input span");
 const livebox = document.querySelector(".livebox");
 const livebotToggler = document.querySelector(".livebot-toggler");
 const livebotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
 
-const API_KEY = "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";
-const inputInitHeight = liveInput.scrollHeight;
+const API_KEY = "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";
+const inputInitHeight = liveInput.scrolHeight;
 
 const createLiveLi = (message, className) => {
     //Create a live <li> element with passed massage and className
