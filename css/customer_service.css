@@ -32,7 +32,6 @@
 
 /* body design */
 body{
-    /* max-width: 1024px; */
   background-color: black;
   font-family: 'Tcfont-Black';
 }
@@ -42,14 +41,7 @@ header {
   color: #ff5100;
 }
 
-.tableWidth {
-    padding-left: 25px;
-    padding-right: 25px;
-}
 
-h2, a {
-    text-decoration: none;
-}
 
 input,select,textarea{
     background-color: rgb(221, 201, 201);
