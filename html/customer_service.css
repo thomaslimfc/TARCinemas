@@ -1,0 +1,73 @@
+* {box-sizing: border-box;}
+
+/* Loading Custom Fonts */
+@font-face
+{
+    font-family: 'Tcfont-Regular';
+    src: url('/TARCINEMA/font/Bambino_W00_Regular.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Regular.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Regular.ttf') format('ttf');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Bold';
+    src: url('/TARCINEMA/font/Bambino_W00_Bold.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Bold.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Bold.ttf') format('ttf');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Black';
+    src: url('/TARCINEMA/font/Bambino_W00_Black.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Black.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Black.ttf') format('truetype');       /* Safari, Android, iOS */
+}
+@font-face
+{
+    font-family: 'Tcfont-Black-Italic';
+    src: url('/TARCINEMAA/font/Bambino_W00_Black_Italic.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Black_Italic.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('/TARCINEMA/font/Bambino_W00_Black_Italic.ttf') format('truetype');       /* Safari, Android, iOS */
+} 
+
+/* body design */
+body{
+    /* max-width: 1024px; */
+  background-color: black;
+  font-family: 'Tcfont-Black';
+}
+/* header design */
+header {
+  text-align: center;
+  color: #ff5100;
+}
+
+.tableWidth {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h2, a {
+    text-decoration: none;
+}
+
+input,select,textarea{
+    background-color: rgb(221, 201, 201);
+}
+
+input:hover,select:hover,textarea:hover{
+    background-color: rgb(224, 212, 212);
+}
+
+option{
+    font-family: 'Tcfont-Black';
+}
+
+input[type="file"] {
+    font-family: 'Tcfont-Black';
+    
+    
+    font-size: 22px;
+}
+
+
