@@ -1,3 +1,3 @@
 function timeselect(){
-    location.href = "/TARCinemas/html/halltype.html";
+    location.href = "../html/halltype.html";
 }

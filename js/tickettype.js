@@ -11,5 +11,5 @@ function cart(){
 
         localStorage.setItem("subtotal",subtotal);
 
-        location.href = "/TARCinemas/html/food.html";        
+        location.href = "../html/food.html";        
 }
