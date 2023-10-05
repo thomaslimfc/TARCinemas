@@ -37,13 +37,13 @@
 * body
 {
     color: #EFEDFF;
-    background-color: #0c0c09;
+    background-color: #111111;
     font-family: "Tcfont-Bold";
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    max-width: auto;
     min-width: 640px;
+    max-width: 1024px;
     box-sizing: border-box;
 }                               /* Basic - Finished */
 
@@ -133,7 +133,7 @@ body > div > ul > li > a > img:hover
 {
     transform: scale(1.55);
 }
-  
+
 /* When the screen is less than 600 pixels wide, hide all links, except
     for the first one ("Home"). Show the link that contains should open
     and close the top_nav (.icon) */
@@ -426,7 +426,4 @@ footer > img
 
 
                     /* General CSS */
-h1, h2, h3, h4, h5, h6
-{
-    color: #EFEDFF;
-}
+

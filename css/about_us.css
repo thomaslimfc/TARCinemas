@@ -215,108 +215,79 @@ li.dropdown {
   }
 }
 
-
-/* Header - TAR Cinemas Logo Design */
-.logo_header
-{
-    font-family: "Tcfont-Black";
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 200%;
+/* ORG STRUCTURE */
+.org_title {
+  text-align: center;
+  /* padding-left: 50px; */
 }
 
-
-/* Position the image container (needed to position the left and right arrows) */
-.slideshow_container {
-  margin: auto;
-  max-width: 1000px;
-  max-height: 10%;
-  position: relative;
-}
-
-.moviesBanner {
-  visibility: visible; 
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* Poster */
-.poster_container {
-  position: relative;
-  width: 50%;
-  max-width: 20%;
+.org_structure_table {
+  align-items: center;
   float: left;
 }
 
-.poster {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+.org_structure {
+  background-color: #F6B162;
+  color: #111111;
+  width: 230px;
+  height: 328px;
+  border-radius: 20px;
 }
 
-.movies_info {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  float: left;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.org_structure:hover {
+  transform: scale(1.02);
+  transition-delay: 0.2s;
+  border: 3px solid #efedff;
+}
+
+.org_structure > img {
+  height: 180px;
+  /* border-radius: 20px 20px 20px 20px; */
+  /* padding-top: 25px; */
+}
+
+.org_name {
+  font-family: 'Tcfont-Black';
+}
+
+.org_role, .org_email {
+  font-family: 'Tcfont-Bold';
+  font-size: small;
+}
+
+.org_role:hover, .org_email:hover {
+  transform: scale(1.10);
+  transition-duration: 0.5s;
+}
+
+#org_photo {
+  border-radius: 15px;
+  border: 3px solid #111111;
+  cursor: default;
+}
+
+#org_photo:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+
+}
+
+.org_name, .org_role, .org_email {
   text-align: center;
 }
 
-.poster_container:hover .poster {
-  opacity: 0.3;
+.org_email {
+  color: #111111;
+  text-decoration: none;
 }
 
-.poster_container:hover .info {
-  opacity: 1;
+.cs_p {
+  font-family: "Tcfont-Regular";
+  text-align: justify;
 }
 
-.info {
-  background-color: #ff4000;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+.big_screen_img {
+  cursor: default;
 }
 
-h1{
-    margin-left:100px;
-}
 
-p,ol{
-margin-left:300px;
-margin-right: 300px;
-}

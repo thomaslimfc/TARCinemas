@@ -116,7 +116,7 @@ img {
 
 .tab.active {
     /* background-color: #4E214F; */
-    border-bottom: 3px solid #fff100;
+    border-bottom: 3px solid #F6B162;
 }
 
 .tab_content {
@@ -130,7 +130,7 @@ img {
 }
     
 div.active {
-    color: #fff100;
+    color: #F6B162;
 }
 
 div.tab_content > p {
@@ -255,6 +255,10 @@ div.tab_content > p {
     max-width: 700px;
     position: relative;
     margin: auto;
+}
+
+.trailer_title {
+    color: #EFEDFF;    
 }
 
 /* #tab4 {

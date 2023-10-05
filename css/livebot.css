@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: Tcfont-Black;
+  font-family: 'Tcfont-Black';
 }
 
 body{
   background: black;
+  font-family: 'Tcfont-Black';
 }
 
 .livebot-toggler{
@@ -76,7 +78,7 @@ body{
   position: relative;
 }
 
-.livebot header h1{
+.livebot header h2{
   color:#fff;
   font-size: 1.4rem;
 }
@@ -114,12 +116,14 @@ body{
   line-height: 32px;
   border-radius: 4px;
   margin: 0 10px 7px 0;
+  float:left;
 }
 
 .livebox .outgoing{
   margin: 20px 0;
   justify-content:flex-end ;
-
+  float:right;
+  width:50%;
 }
 
 .livebox .live p{
@@ -135,8 +139,6 @@ body{
 .livebox .live p.error{
   color:#721c24;
   background:#f8d7da;
-
-
 }
 
 .livebox .incoming p{

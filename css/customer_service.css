@@ -4,62 +4,133 @@
 @font-face
 {
     font-family: 'Tcfont-Regular';
-    src: url('/TARCINEMA/font/Bambino_W00_Regular.woff2') format('woff2'),       /* Super Modern Browsers */
-            url('/TARCINEMA/font/Bambino_W00_Regular.woff') format('woff'),      /* Pretty Modern Browsers */
-            url('/TARCINEMA/font/Bambino_W00_Regular.ttf') format('ttf');       /* Safari, Android, iOS */
+    src: url('../font/Bambino_W00_Regular.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Regular.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Regular.ttf') format('ttf');       /* Safari, Android, iOS */
 }
 @font-face
 {
     font-family: 'Tcfont-Bold';
-    src: url('/TARCINEMA/font/Bambino_W00_Bold.woff2') format('woff2'),       /* Super Modern Browsers */
-            url('/TARCINEMA/font/Bambino_W00_Bold.woff') format('woff'),      /* Pretty Modern Browsers */
-            url('/TARCINEMA/font/Bambino_W00_Bold.ttf') format('ttf');       /* Safari, Android, iOS */
+    src: url('../font/Bambino_W00_Bold.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Bold.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Bold.ttf') format('ttf');       /* Safari, Android, iOS */
 }
 @font-face
 {
     font-family: 'Tcfont-Black';
-    src: url('/TARCINEMA/font/Bambino_W00_Black.woff2') format('woff2'),       /* Super Modern Browsers */
-            url('/TARCINEMA/font/Bambino_W00_Black.woff') format('woff'),      /* Pretty Modern Browsers */
-            url('/TARCINEMA/font/Bambino_W00_Black.ttf') format('truetype');       /* Safari, Android, iOS */
+    src: url('../font/Bambino_W00_Black.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Black.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Black.ttf') format('truetype');       /* Safari, Android, iOS */
 }
 @font-face
 {
     font-family: 'Tcfont-Black-Italic';
-    src: url('/TARCINEMAA/font/Bambino_W00_Black_Italic.woff2') format('woff2'),       /* Super Modern Browsers */
-            url('/TARCINEMA/font/Bambino_W00_Black_Italic.woff') format('woff'),      /* Pretty Modern Browsers */
-            url('/TARCINEMA/font/Bambino_W00_Black_Italic.ttf') format('truetype');       /* Safari, Android, iOS */
+    src: url('..A/font/Bambino_W00_Black_Italic.woff2') format('woff2'),       /* Super Modern Browsers */
+            url('../font/Bambino_W00_Black_Italic.woff') format('woff'),      /* Pretty Modern Browsers */
+            url('../font/Bambino_W00_Black_Italic.ttf') format('truetype');       /* Safari, Android, iOS */
 } 
 
 /* body design */
-body{
-  background-color: black;
+body {
+  background-color: #0c0c09;
   font-family: 'Tcfont-Black';
 }
 /* header design */
 header {
   text-align: center;
-  color: #ff5100;
+  /* color: #ff5100; */
 }
 
-
-
-input,select,textarea{
+input,select,textarea {
     background-color: rgb(221, 201, 201);
 }
 
-input:hover,select:hover,textarea:hover{
+input:hover,select:hover,textarea:hover {
     background-color: rgb(224, 212, 212);
 }
 
-option{
+option {
     font-family: 'Tcfont-Black';
+}
+
+input, select {
+    border-radius: 8px;
+    height: 30px;
+}
+
+:placeholder-shown, select {
+    padding-left: 25px;
 }
 
 input[type="file"] {
     font-family: 'Tcfont-Black';
-    
-    
     font-size: 22px;
 }
 
+.cs_table, table, tr, td {
+    border: 2px solid #0c0c09;
+}
 
+.col1 {
+    color: #0c0c09;
+    width: 400px;
+    height: 40px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.col2 {
+    color: #0c0c09;
+    width: 405px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.tr1, .tr3, .tr5 {
+    background-color: #f6b162;
+    color: #0c0c09;
+}
+
+.tr2, .tr4, .tr6 {
+    background-color: #FFEBCD;
+    color: #0c0c09;
+}
+
+input, select, textarea {
+    color: #0c0c09;
+    background-color: #FFEBCD;
+    width: 780px;
+    height: 40px;
+}
+
+#phone {
+    width: 300px;
+}
+
+#email {
+    width: 300px;
+}
+
+input:hover, select:hover, textarea:hover {
+    color: #0c0c09;
+    background-color: rgb(248, 212, 162);
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    padding: 20px;
+}
+
+.submit_button {
+    color: #0c0c09;
+    background-color: #f6b162;
+    font-family: 'Tcfont-Black';
+    text-decoration: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#confirm_input {
+    width: 10px;
+}
