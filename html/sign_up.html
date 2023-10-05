@@ -6,17 +6,57 @@
     <title>Sign Up - TARCinemas</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general_style_sign.css">
     <link rel="stylesheet" href="../css/sign_style.css">
-    <link rel="icon" href="/TARCinemas/images/tarc_logo.png">
-    <script src="js/sign_up.js"></script>
+    <link rel="icon" href="../images/tarc_logo.png">
+    <script src="../js/sign_up.js"></script>
 </head>
+
+<nav>
+	<div>
+		<div class="topnav" id="myTopnav">
+			<ul>
+				<ul>
+					<li class="logo_bg" style="float:left;">
+						<a href="../index.html" class="logo_header" class="active" width="100%">
+						  <span>TAR</span>Cinemas&#174
+						</a>
+					</li>
+					<div style="float:right;">
+						<li><a href="../html/movies.html">Movies</a></li>
+						<li><a href="../html/food.html">Food</a></li>
+                        <li><a href="../html/experience">Experience</a></li>
+						<li class="dropdown">
+							<a href="javascript:void(0)" class="dropbtn">
+								About
+							</a>
+							<div class="dropdown-content">
+								<a href="../html/customer_service.html">Customer Service</a>
+								<a href="../html/faq.html">FAQs</a>
+							</div>
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+						</li>
+						 <!-- <li><a><input id="search-bar"type="text" placeholder="Movies/Cinemas"></a></li>    -->
+						 <li>
+							<a href="../html/profileDetails.html" class="profile_imgButton"><img src="images/profile_icon.png" alt="" height="25px"></a>
+						 </li>
+						 <li>
+							<a href="../html/sign_in.html" class="buyNow_button" id="navSign_button"
+							class="moviePosterContainer_overlayText">Sign in</a>
+						 </li>
+					</div>
+				</ul>
+			</ul>
+		</div>
+	</div>
+</nav>
 
 <body>
     <div class="container">
         <center>
             <h1>SIGN UP</h1>
         </center>
-        <form id="signup_form" action="../sign_up.php">
+        <form id="signup_form">
             <div class="form">
                 <div class="input_box">
                     <img src="../images/username_icon.png" class="sign_icon">
@@ -65,7 +105,7 @@
     
                 <div class="input_box">
                     <img src="../images/gender_icon.png" class="sign_icon">
-                    <label for="gender" class="gender_selectbox">Gender:</label>
+                    <label for="gender" class="gender_selectbox" style="color: #0c0c09;">Gender:</label>
                     <select name="gender" id="gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -75,7 +115,7 @@
     
                 <div class="input_box">
                     <img src="../images/location_icon.png" class="sign_icon">
-                    <label for="city" class="city_selectbox">City:</label>
+                    <label for="city" class="city_selectbox" style="color: #0c0c09;">City:</label>
                     <select name="city" id="city">
                         <option value="Selangor">Selangor</option>
                         <option value="Penang">Penang</option>
@@ -96,22 +136,22 @@
                 <div class="options">
                     <div class="remember-me terms_privacy">
                         <input id="remember-me" type="checkbox" required>
-                        <label for="remember-me">
+                        <label for="remember-me" style="color: #0c0c09;">
                             By creating an account, you agree to our
-                            <a href="../html/terms_privacy.html" target="_blank" id="acc">
+                            <a href="../html/terms_privacy.html" id="acc">
                                 Terms & Privacy.
                             </a>
                         </label>
                     </div>
                 </div>
                 
-                <a>
-                    <button id="sign_btn" class="sign_btn">Sign up</button>
-                </a>
+                <button id="sign_btn" class="sign_btn">
+                    <a href="../html/sign_in.html" style="color: #ffffff; text-decoration: none;">Sign Up</a>
+                </button>
 
                 <div id="acc1">
                     <p>
-                        <a id="acc">Already have an account?</a>
+                        <a id="acc" style="color: #0c0c09;">Already have an account?</a>
                         <a href="../html/sign_in.html">Sign in here!</a>
                     </p>
                 </div>
@@ -119,8 +159,72 @@
     
             <p id="message"></p>
         </form>
-
-        
+    </div>
 </body>
 
+<footer>
+	<!-- Company Information -->
+	<center>
+		<div>
+			<a href="index.html" id="logo_footer" class="active" width="100px">
+				<span>TAR</span>Cinemas&#174
+			</a>
+			<p id="business_name">TAR Cinemas (Penang) Sdn. Bhd.
+				<br>
+				<span class="ssm_regNumber">195901000262 (8888-M)</span>
+			</p>
+			<p>
+				<a id="address" target="_blank"
+					href="https://www.google.com/maps/place/Tunku+Abdul+Rahman+University+College/@3.2161697,101.7268329,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc3843bfb6a031:0x2dc5e067aae3ab84!8m2!3d3.2161643!4d101.7290216">
+					77, Lorong Lembah Permai 3,
+					<br>
+					11200 Tanjung Bungah,
+					<br>
+					Pulau Pinang, Malaysia.
+				</a>
+			</p>
+		</div>
+	</center>
+	<br>
+	<div>
+		<center>
+			<table class="socialMedia_container">
+				<tr>
+					<td>
+						<h3>Follow Us On</h3>
+					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="https://www.facebook.com/" target="_blank">
+							<img src="../images/facebook.png" alt="Facebook" height="30px">
+						</a>
+					</td>
+					<td>
+						<a href="https://twitter.com/?lang=en" target="_blank">
+							<img src="../images/twitter.png" alt="Twitter" height="30px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+							<img src="../images/instagram.png" alt="Instagram" height="30px">
+						</a>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</div>
+
+	<hr>
+    
+	<center>
+		<h5>
+			Copyright &#169; 2023 TAR Cinemas (Penang) Sdn. Bhd.
+			<br>
+			All rights reserved.
+	</center>
+	<hr>
+	<br>
+</footer>
 </html>

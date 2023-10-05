@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Come as guests, leave as family. ">
+    <meta name="keywords" content="Customer Service, Contact Us, feedback">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Phone size diff need this to adjust -->
+    <link rel="stylesheet" href="../css/general_style.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/customer_serviceee.css">
+    <link rel="stylesheet" href="../css/livebot.css">
+    <link rel="icon" href="/TARCinemas/images/tarc_logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <script src="../js/livebot.js" defer></script>
+    <title>Customer Service</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <div class="topnav" id="myTopnav">
+                <ul>
+                    <ul>
+                        <li class="logo_bg" style="float:left;">
+                            <a href="../index.html" class="logo_header" class="active" width="100%">
+                              <span>TAR</span>Cinemas&#174
+                            </a>
+                            <!-- <a href="index.html" class="logo_header" class="active" width="150%">
+                                <img src="images/tarc_logo.png" height="150px">
+                            </a> -->
+                        </li>
+                        <div style="float:right;">
+                            <li><a href="../html/movies.html">Movies</a></li>
+                            <li><a href="../html/food.html">Food</a></li>
+        
+        
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">
+                                    About
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="../html/customer_service.html" target="_blank">Customer Service</a>
+                                    <a href="../html/faq.html" target="_blank">FAQs</a>
+                                </div>
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                            </li>
+                             <!-- <li><a><input id="search-bar"type="text" placeholder="Movies/Cinemas"></a></li>    -->
+                             <li>
+                                <a href="../html/profileDetails.html" class="profile_imgButton"><img src="../images/profile_icon.png" alt="" height="25px"></a>
+                             </li>
+                             <li>
+                                <a href="../html/sign_in.html" target="_blank" class="buyNow_button" id="navSign_button"
+                                class="moviePosterContainer_overlayText">Sign in</a>
+                             </li>
+                        </div>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <table >
+        <tr>
+        <td colspan="2">
+        <div class="contactUs">
+            <h1 style="font-size:50px">Contact Us</h1>
+        
+        
+        <div class="container">
+            <div class="title" style="font-size:20px">Whether in love with our services, <br>or have any feedback - We want to foster open communication,<br> address concerns, and offer. <br> Let our company enhance and advance.</div>
+            <br>
+        <div class="addressDe">
+    
+          <p>
+            Service Hours : <br>Mon to Sun 10.00am to 1.00am</p><br>
+    
+          <p style="font-size: 20px">Address<br><br>
+                <img src="../images/images.map.png" alt="imagesMap" width="250px" height="220px" usemap="#imageMap" >
+                <map name="imageMap">
+                    <area shape="circle" coords="75, 48, 6"  alt="Penang" href="#Penang" onclick="goMap()">
+                    <area shape="circle" coords="130, 125, 6"  alt="KualaLumpur" href="#KualaLumpur" onclick="goMap1()">
+                </map>
+
+            <div class="Penang">
+                <span id="Penang">
+                    <a href="https://maps.app.goo.gl/wLae1fE3pvrVWdjm9" style="color: rgb(210, 153, 92); text-decoration: none">
+                    <p>
+                        <h3><b>Penang Outlet</b></h3>
+                        <br><i>
+                        77, Lorong Lembah Permai 3,
+                        <br>
+                        11200 Tanjung Bungah,
+                        <br>
+                        Pulau Pinang, Malaysia.
+                        <br><br></i>
+                    </p>
+                    </a>
+                </span>
+            </div>
+
+            <div class="KualaLumpur">
+                <span id="KualaLumpur">
+                    <a href="https://maps.app.goo.gl/ugn5o51xhYxWBk5v9" style="color: rgb(210, 153, 92); text-decoration: none">
+                    <p>
+                        <h4 style="font-size: 1.17em"><b>Kuala Lumpur Outlet</b></h4>
+                        <br><i>
+                        Ground Floor, <br>Bangunan Tan Sri Khaw Kai Boh (Block A), <br>Jalan Genting Kelang, <br>Setapak, 53300 Kuala Lumpur, <br>Federal Territory of Kuala Lumpur.</i>
+                    </p>
+                    </a>
+                </span>
+            </div>
+        </p>
+        <br>
+    
+          <p>TARCinema Customer Relations Hotline<br>
+          <a href="tel:+60 1-888-88-88" style= "font-size: 20px; color: rgb(210, 153, 92); text-decoration: none"><b>+60 1-888-88-88</b></a></p>
+          <br>
+    
+          <p>TARCinema Email Support<br>
+          <a href="mailto:TARcinema@example.com" style= "font-size: 20px; color: rgb(210, 153, 92); text-decoration: none"><b>TARcinema@example.com</b></a></p>
+    
+        </div>  
+        </td> 
+
+    <td>
+    <div class="form">
+    <form>
+    <div class="name">
+        <label> &nbsp;Name* </label>
+        <br>
+        <input type="text" id="name" placeholder="First and Last Name" required style="width:500px ;height:35px" pattern="[A-Za-z]" title="Please enter name without digits.">
+     </div>
+     <br>
+       
+    <div class="phone">
+        <label> Contact Number* </label>
+        <br>
+        <input type="tel" id="phone" placeholder="(nnn)nnn-nnnn" required pattern="^\d{10}$" title="Please enter contact number with 10 digits." style="width:500px ;height:35px">
+    </div>
+    <br>
+
+    <div class="email">
+        <label> Email* </label>
+        <br>
+        <input type="email" id="email" required placeholder="abc1234@example.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$" title="Please enter the valid email address." style="width:500px ;height:35px">
+    </div>
+    <br>
+
+    <div class="Typebox">
+    <label>Type</label>
+    <br>
+    <select name="Type" id="TypeBox" style="width:500px ;height:35px" aria-selected="">
+    <option value="type1"></option>
+    <option value="type2"> Complaint</option>
+    <option value="type3"> Compliment</option>
+    <option value="type4"> Enquiry</option>
+    </select>
+    </div>
+    <br>
+
+    <div class="Categorybox">
+        <label>Category</label>
+        <br>
+        <select name="CategoryboxType" id="Categorybox" style="width:500px ;height:35px">
+        <option value="category1"></option>
+        <option value="category2"> theatre</option>
+        <option value="category3"> Cinema Services</option>
+        <option value="category4"> F&B</option>
+        <option value="category5"> Movies</option>
+        <option value="category6"> Website</option>
+        </select>
+    </div>
+    <br>
+
+    <div class="feedback">
+        <label> Feedback</label>
+        <br>
+        <textarea name="custFeedback" id="feedbackBox" style="width:500px ;height:100px" placeholder="What enquiries do you have ?"></textarea>
+    </div>
+    <br>
+
+    <div class="attachment">
+        <label>Attachment</label>
+        <br>
+        <input type="file" name="fileName" accept="file_type" style="width:500px ;height:35px">
+    </div>
+
+    <div>
+        <input type="checkbox" id="confirmBox" name="confirm" required>
+        <label for="confirmBox">I hereby confirm that all information provided is accurate <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and up-to-date</label>
+    </div>
+    <br>
+
+    <div>
+        <button type="submit" id="submit" onclick="validatesubmit()" style="width:500px ; height:35px; background-color: rgb(225, 146, 61);
+        color:white; font-family: 'Tcfont-Black'; border-radius: 100px">SUBMIT</button>
+     </div>
+    </form>
+
+    </div></td></tr>
+</table>
+
+<button class="livebot-toggler">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+</button>
+<div class="livebot">
+    <header>
+        <h2>Livebot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="livebox">
+        <li class="live incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi there 👏<br> How can I help you today?</p>
+        </li>
+    </ul>
+    <div class="live-input">
+        <textarea placeholder="Enter a message..."></textarea>
+        <span id="send-btn" class="material-symbols-outlined">send</span>
+    </div>
+</div>
+
+<script>
+function validatesubmit() {
+
+    var NAME = document.getElementById("name").value;
+    var PHONE = document.getElementById("phone").value;
+    var EMAIL = document.getElementById("email").value;
+    var FEEDBACK = document.getElementById("feedbackBox").value;
+    var CONFIRM = document.getElementById("confirmBox");
+    var TYPE = document.getElementById("TypeBox").value;
+    var CATEGORY = document.getElementById("Categorybox").value;
+
+    if(NAME !=="" && PHONE !=="" && EMAIL !=="" && FEEDBACK !=="" &&  TYPE!=="" && CATEGORY!=="" && CONFIRM.checked){
+    alert("Submit Successfully!");
+    }
+    else{
+        alert("Please fill in all fields.");
+    }
+
+}
+
+var PN_Active = false;
+var KL_Active = false;
+
+function goMap() {
+  var PN = document.getElementById("Penang");
+  var KL = document.getElementById("KualaLumpur");
+
+  if (!PN_Active) {
+    PN.style.display = "block";
+    KL.style.display = "none";
+    PN_Active = true;
+    KL_Active = false;
+  } else {
+    PN.style.display = "none";
+    PN_Active = false;
+  }
+}
+
+function goMap1() {
+  var PN = document.getElementById("Penang");
+  var KL = document.getElementById("KualaLumpur");
+
+  if (!KL_Active) {
+    KL.style.display = "block";
+    PN.style.display = "none";
+    KL_Active = true;
+    PN_Active = false;
+  } else {
+    KL.style.display = "none";
+    KL_Active = false;
+  }
+}
+
+</script>    
+    
+</body>
+
+<br><br><br><br><br><br>
+    <hr>
+
+    <footer>
+        <!-- Company Information -->
+        <center>
+            <div>
+                <a href="index.html" id="logo_footer" class="active" width="100px">
+                    <span>TAR</span>Cinemas&#174
+                </a>
+                <p id="business_name">TAR Cinemas (Penang) Sdn. Bhd.
+                    <br>
+                    <span class="ssm_regNumber">195901000262 (8888-M)</span>
+                </p>
+                <p>
+                    <a id="address" target="_blank"
+                    href="https://www.google.com/maps/place/Tunku+Abdul+Rahman+University+College/@3.2161697,101.7268329,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc3843bfb6a031:0x2dc5e067aae3ab84!8m2!3d3.2161643!4d101.7290216">
+                    77, Lorong Lembah Permai 3,
+                    <br>
+                    11200 Tanjung Bungah,
+                    <br>
+                    Pulau Pinang, Malaysia.
+                    </a>
+                </p>                
+            </div>
+        </center>
+
+        <br>
+
+        <div>
+            <center>
+                <table class="socialMedia_container">
+                    <tr>
+                        <td>
+                            <h3>Follow Us On</h3>
+                        </td>
+                        <td></td><td></td><td></td>
+                        <td>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="../images/facebook.png" alt="Facebook" height="30px">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://twitter.com/?lang=en" target="_blank">
+                                <img src="../images/twitter.png" alt="Twitter" height="30px">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                                <img src="../images/instagram.png" alt="Instagram" height="30px">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+
+        <hr>
+
+        <center>
+            <h5>
+                Copyright &#169; 2023 TAR Cinemas (Penang) Sdn. Bhd.
+                <br>
+                All rights reserved.
+            </h5>
+        </center>
+
+        <hr>
+        <br>
+    </footer>
+</html>
