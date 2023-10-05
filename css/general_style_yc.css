@@ -37,7 +37,7 @@
 * body
 {
     color: #EFEDFF;
-    background-color: #0c0c09;
+    background-color: #111111;
     font-family: "Tcfont-Bold";
     margin: 0 auto;
     padding: 0;
@@ -131,6 +131,10 @@ body > div > ul > li > a > img:hover
 
 .top_nav_hover_none:hover
 {
+    transform: scale(1.55);
+}
+
+.profile_imgButton:hover {
     transform: scale(1.55);
 }
   

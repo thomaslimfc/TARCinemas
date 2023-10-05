@@ -57,31 +57,6 @@ body {
   padding: 2%;
 }
 
-/* .signin-button {
-  list-style-type: none;
-  text-decoration: none;
-  height: 55px;
-  float: right;
-  font-size: 15px;
-  background-color: #f6b162;
-  color: #ffc7b0;
-  transition: background-color 1.0s;
-  margin: auto;
-}
-
-.signin-button:hover {
-  float: right;
-  list-style-type: none;
-  text-decoration: none;
-  height: 55px;
-  display: block;
-  font-size: 15px;
-  background-color: #ffb57c;
-  transition: background-color 1.0s;
-  color: #f6b162;
-  margin: auto;
-} */
-
 /* navigation bar & dropdown menu */
 .topnav {
   background-color: #0c0c09;
@@ -130,10 +105,42 @@ li {
   display: none;
 }
 
-.buyNow_button {
-  color: #00042c;
-  transition-duration: 0s;
+/* BUY NOW's button */
+.buyNow_button
+{
+    color: #0c0c09;
+    background-color: #F6B162;
+    font-family: 'Tcfont-Black';
+    font-size: 16px;
+    border-radius: 20px;
+    height: 100%;
+    margin: 5px 5px 0 5px;
+    padding: 15px 30px;
+    display: flex;
+    position: relative;
+    display: inline-block;
+    /* padding-right: 40px; */
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
 }
+
+.buyNow_button:hover
+{
+    color: #00042c;
+    background: #F6B162;
+    box-shadow: 0 0 25px #edb06a,
+                0 0 25px #edb06a,
+                0 0 25px #edb06a;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition-delay: 0.10s;
+}                                   /* BUY NOW's button - Finished */
+
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
@@ -164,18 +171,6 @@ Show the link that contains should open and close the topnav (.icon) */
   }
 }
 
-#search-bar {
-  max-width: fit-content;
-}
-
-#search-bar::placeholder
-{
-  background-color: #ffffff;
-  color: #f6b162;
-  border-radius: 8px;
-  width: auto;
-  text-align: center;
-}
 
 li.dropdown {
   display: inline-block;
@@ -208,9 +203,9 @@ li.dropdown {
   display: block;
 }
 
-.topnav input[type=text] {
+/*.topnav input[type=text] {
   float: right;
-  background-color: #212112;
+  background-color: #0c0c09;
   width: 100%;
   height: 20px;
   color: #ccc;
@@ -219,7 +214,7 @@ li.dropdown {
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
-}
+}*/
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
@@ -243,93 +238,54 @@ li.dropdown {
     font-size: 200%;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.slideshow_container {
-  margin: auto;
-  max-width: 1000px;
-  max-height: 10%;
-  position: relative;
+span#header
+{
+    font-family: "Tcfont-Black-Italic";
+    color: #f6b162;
 }
 
-.moviesBanner {
-  visibility: visible; 
-}
+span#header:hover
+{
+    color: #ffffff;
+    transition-delay: 0.10s;
+}            
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+#navSign_button {
+  color: #0c0c09;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+  height: 40px;
 
-.dropbtn:hover {
-  background-color: #212112;
-  transition-duration: 0s;
-
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Poster */
-.poster_container {
-  position: relative;
-  width: 50%;
-  max-width: 20%;
-  float: left;
-}
-
-.poster {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.movies_info {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  float: left;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.poster_container:hover .poster {
-  opacity: 0.3;
-}
-
-.poster_container:hover .info {
-  opacity: 1;
-}
-
-.info {
-  background-color: #f6b162;
-  color: white;
+  background-color: #F6B162;
+  font-family: 'Tcfont-Black';
   font-size: 16px;
-  padding: 16px 32px;
+  border-radius: 20px;
+  height: 100%;
+  margin: 5px 5px 0 5px;
+  padding: 15px 30px;
+  display: flex;
+  position: relative;
+  display: inline-block;
+  /* padding-right: 40px; */
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  letter-spacing: 2px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+#navSign_button:hover
+{
+  color: #0c0c09;
+  background: #F6B162;
+  box-shadow: 0 0 10px #edb06a,
+              0 0 10px #edb06a,
+              0 0 10px #edb06a;
+  cursor: pointer;
+  transform: scale(1.01);
+  transition-delay: 0.50s;
 }

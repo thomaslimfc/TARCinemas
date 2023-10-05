@@ -72,7 +72,6 @@ input[type="file"] {
 }
 
 .col1 {
-    color: #0c0c09;
     width: 400px;
     height: 40px;
     padding-right: 20px;
@@ -80,7 +79,6 @@ input[type="file"] {
 }
 
 .col2 {
-    color: #0c0c09;
     width: 405px;
     height: 40px;
     padding-left: 20px;
@@ -92,7 +90,7 @@ input[type="file"] {
 }
 
 .tr2, .tr4, .tr6 {
-    background-color: #FFEBCD;
+    background-color: #f59324;
     color: #0c0c09;
 }
 
@@ -122,12 +120,15 @@ input[type="text"], input[type="tel"], input[type="email"] {
 
 .submit_button {
     color: #0c0c09;
+    text-align: center;
     background-color: #f6b162;
     font-family: 'Tcfont-Black';
     text-decoration: none;
     border-radius: 20px;
-    width: 100px;
-    height: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
     cursor: pointer;
 }
 

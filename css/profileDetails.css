@@ -1,3 +1,12 @@
+
+.big_container {
+  max-width: 900px;
+  max-height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+}
+
 .memberAccountside .separator {
     width: 100%;
     height: 2px;
@@ -8,16 +17,15 @@
 .memberAccountside {
     display: block;
     float: left;
-    width: 20%;
+    width: 15%;
     background-color: #1e1c1b;
-    margin-left: 20px;
     border-radius: 20px;
 }
 
 .accountMain {
     display: block;
-    width: 60%;
-    float: left;
+    width: 70%;
+    float: right;
     background-color: #0c0c09;
     margin-left: 100px;
     border-radius: 20px;
@@ -33,7 +41,6 @@
 .memberLevel{
     padding: 60px;
     width: 30%;
-    border-right: 1px solid #a2aeae;
     display: block;
     float: left;
 }
@@ -43,7 +50,7 @@
   width: 70%;
   color: white;
   text-align: center;
-  margin-left: 200px;
+  margin-left: 225px;
 }
 
 .profilePic {
@@ -56,18 +63,32 @@
     width: 100%;
 }
 
+.membership-container {
+  border-radius: 15px;
+  background-color: #f3751b;
+  width: 100%;
+  float: left;
+  padding: 30px;
+
+}
+
+.membership-bottom {
+  float: right;
+  background-color: #c85209;
+  width: 50%;
+}
+
 .menuWrapper {
     color: white;
     float: left;
     padding: 20px;
+    background-color: #1e1c1b;
+
 }
 
-.wrapperTitle {
-    font-weight: bold;
-    display: block;
-    font-size: large;
-    opacity: 0.8;
-    text-align: center;
+.wrappers ul {
+  background-color:#1e1c1b;
+  border-radius: 5px;
 }
 
 .profile_d a{
@@ -76,16 +97,13 @@
     text-align: center;
     display: block;
     color: white;
-    background-color: #1e1c1b;
+    border-radius: 5px;
     padding: 20px;
+    margin: 10px;
 }
 
 .profile_d a:hover{
     background-color: #4b3f39;
-}
-
-.wrappers {
-    background-color: #1e1c1b;
 }
 
 .wrappers li {
@@ -109,6 +127,12 @@
     border-radius: 20px;
 }
 
+.securityD{
+  padding: 24px;
+  background-color: #1e1c1b;
+  border-radius: 20px;
+}
+
 label{
     color: white;
 }
@@ -123,30 +147,10 @@ label{
 }
 
 .infoinfo{
-    padding: 20px;
-}
-
-.infoinfo label{
-    padding: 10px;
-}
-
-form .infoinfo input,
-.infoinfo input, 
-.infoinfo select
-{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    border-radius: 3px;
-    padding: 8px 10.5px;
-    color: #b2b2b2;
-    background: 0 0;
-    border: 1px solid gray;
-    display: block;
+    padding: 5px;
     width: 100%;
-    box-sizing: border-box;
-    outline: none;
 }
+
 
 .button_edit{
     display: block;
@@ -161,6 +165,10 @@ form .infoinfo input,
     padding: 30px;
     float: left;
     border-radius: 20px;
+  }
+
+  .addCard {
+    max-width: 70%;
   }
 
   .credit-card {
@@ -281,8 +289,9 @@ form .infoinfo input,
 }
 
 .ticket {
-  background: #c85209;
-  height: 390px;
+  background: #b67c53;
+  font-size: 15px;
+  height: 350px;
   width: 15%;
   float: left;
   position: relative;

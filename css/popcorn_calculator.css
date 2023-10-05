@@ -68,7 +68,7 @@ img {
                             /* Result's Table Design */
 .title_row
 {
-    background-color: #26890d;
+    background-color: #F6B162;
 }
 .odd_row
 {
@@ -80,7 +80,7 @@ img {
 }
 table
 {
-    border-color: #F06070;
+    border-color: white;
     border-collapse: collapse;
     border-style: solid;
     border-width: 2px;
@@ -89,26 +89,26 @@ table
 .td_first_column
 {
     width: 200px;
-    color: #00042c;
+    color: #0c0c09;
 }
 .td_second_column
 {
     width: 150px;
-    color: #00042c;
+    color: #0c0c09;
 }
 .td_third_column
 {
     width: 100px;
-    color: #00042c;
+    color: #0c0c09;
 }
 #small, #medium, #large {
     font-family: "Tcfont-bold";
     width: 100px;
-    color: #00042c;
+    color: #0c0c09;
 }
 .title_row
 {
-    color: #ffffff;
+    color: #0c0c09;
 }                                       /* Result's Table Design - Finished */
 
 
@@ -121,15 +121,15 @@ table
     --input-background: #fff;
     --input-placeholder: #CBD1DC;
 
-    --input-border-focus: #CEA716;
+    --input-border-focus: #F6B162;
 
     --group-color: var(--input-color);
     --group-border: var(--input-border);
     --group-background: #EEF4FF;
 
-    --group-color-focus: #00042c;
+    --group-color-focus: #0c0c09;
     --group-border-focus: var(--input-border-focus);
-    --group-background-focus: #CEA716;		
+    --group-background-focus: #F6B162;		
 }
     
 .form_field
@@ -297,8 +297,8 @@ body
                     /* CALCULATE's button */
 .calculate_btn
 {
-    color: #00042c;
-    background-color: #CEA716;
+    color: #0c0c09;
+    background-color: #F6B162;
     font-family: 'Tcfont-Black';
     font-size: 16px;
     border-radius: 20px;
@@ -320,8 +320,8 @@ body
 
 .calculate_btn:hover
 {
-    color: #00042c;
-    background: #CEA716;
+    color: #0c0c09;
+    background: #F6B162;
     box-shadow: 0 0 25px #e9c338,
                 0 0 25px #e9c338,
                 0 0 25px #e9c338;
@@ -339,8 +339,8 @@ body
                     /* RESET's button */
 .reset_btn
 {
-    color: #00042c;
-    background-color: #CEA716;
+    color: #0c0c09;
+    background-color: #F6B162;
     font-family: 'Tcfont-Black';
     font-size: 16px;
     border-radius: 20px;
@@ -361,8 +361,8 @@ body
 
 .reset_btn:hover
 {
-    color: #00042c;
-    background: #CEA716;
+    color: #0c0c09;
+    background: #F6B162;
     box-shadow: 0 0 10px #e9c338,
                 0 0 10px #e9c338,
                 0 0 10px #e9c338;

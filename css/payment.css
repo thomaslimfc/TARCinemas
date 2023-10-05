@@ -1,278 +1,102 @@
 .big_container {
     max-width: 900px;
     max-height: 700px;
-    margin-left: 15%;
-}
-
-.payment_option {
-    background-color: rgb(27, 26, 25);
-    border-radius: 20px;
-    width :70% fit-content;
-}
-
-#fpxPayment{
-    visibility: visible;
-}
-
-#qrScan {
-    visibility: hidden;
-}
-
-.payment_choice {
-    display: block;
-    color: rgb(255, 255, 255);
-    background-color:rgb(37, 33, 31); 
-    border: none;
-
-}
-
-.container_pay{
-    background-color: #333;
-    border-radius: 20px;
-    width: 90%;
-}
-
-.movieDetails{
-    padding: 50px;
-}
-
-.ticketQR img{
-    padding: 50px;
-    max-width: 150px;
-}
-
-.orderdetails{
-    background-color:  rgb(177, 164, 155);
-}
-
-.order_title {
-    background-color: #493e39;
-    color: white;
-    text-align: right;
-    padding: 20px;
-}
-
-li.payment_c{
-    width: 25%;
-    font-size: 20px;
-    display: block;
-    height: 60px;
-    padding: 15px 0 15px 0;
-    border-bottom: 3px solid #ddd;
-}
-
-li.payment_c:hover
-{
-    width: 25%;
-    font-size: 20px;
-    display: block;
-    padding: 15px 0 15px 0;
-    border-bottom: 3px solid #ff5500;
-}
-
-li.payment_c a{
-    width: 100%;
-    float: left;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-li.payment_c a:hover{
-    width: 100%;
-    float: left;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.payment_c:active {
-    border-bottom: 2px solid #ff5500;
-    color: #ffac5e
-}
-
-.allForm{
-    padding: 25px 0 0 0;
-    width: 100%;
-}
-
-table {
     margin: auto;
-    padding: 50px;
-
+    padding: auto;
 }
 
-.bank_type {
+.payment-method-table {
+    color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-method-button{
     text-align: center;
-    color: #ddd;
-    padding-top: 30px;
+    display: block;
+    width: 100%;
 }
 
-.bank_type_img{
-    width: 20%;
-    padding-left: 20px;
+.payment-method-choice {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(209, 183, 166);
     display: block;
-    border-radius: 20px;
-    margin: 0 auto;
-    max-width: 200px;
-    min-width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.payment-method-purchase{
+    cursor: pointer;
+    text-decoration: none;
+    color: #0c0c09;
+    background-color: #F6B162;
+    display: block;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.order-details-purchase{
+    width: 100%;
+    text-align: left;
+    padding: 20px 80px 20px 80px;
+    border: 1px solid;
+    border-color: #F6B162;
+    color: white;
+}
+
+
+
+.payment-method-choice a:hover {
+    display: block;
+    background-color: #F6B162;
+    color: #0c0c09;
+    text-align: center;
+}
+
+.bank_type_img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 300px;
 }
 
 .bank_type_img:hover {
-    border: 3px white;
-    border-radius: 20px;
-    opacity: 0.7;
-
-}
-
-#cardForm{
-    display: block;
-}
-
-#cardForm tr{
-    width: auto;
-}
-
-#cardForm th {
-    float: right;
-    color: #ddd;
-    font-size: 20px;
-    padding: 20px;
-}
-
-#cardForm td input{
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: rgb(177, 164, 155);
-    text-align: center;
-    width: 100%;
-    border-bottom: #ddd;
-    color: #ddd;
-}
-
-#qrForm{
-    display: none;
-}
-
-#qrForm img{
-    display: block;
-    margin: auto 0;
-}
-
-#qrForm tr{
-    width: auto;
-}
-
-#fpxForm{
-    display: none;
-}
-
-#bankTransferForm{
-    display: none;
-    align-content: center;
-}
-
-#bankTransferForm th{
-    float: left;
-    color: #ddd;
-    font-size: 20px;
-    padding: 20px;
-}
-
-#bankTransferForm td {
-    float: right;
-    padding-top: 20px;
-    padding-left: 20px;
-    color: #ddd;
-}
-
-.proceedpay {
-    display: block;
-    cursor: pointer;
-    margin: auto 0;
-    padding-left: 45%;
-    padding-bottom: 20px;
-}
-
-#payment_button {
-    display: block;
-    background-color: #cf642f;
-    color: white;
-    border-radius: 20px;
-    width: 120px;
-    padding: 20px;
-    cursor: pointer;
-}
-
-#payment_button a{
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-
-#payment_button:hover {
-    display: block;
-    background-color: #c6967e;
-    border-radius: 20px;
-    width: 120px;
-    padding: 20px;
-    cursor: pointer;
-}
-
-.qrqr {
-    display: block;
-    margin-left: 10%;
+    opacity: 0.5;
 }
 
 #qrCode{
-    padding: 20px;
-    padding-left:20%;
+    width: 33.33%;
+}
+
+.qr-details {
+    display: none;
+}
+
+.fpx-details{
+    display: none;
+}
+
+.format {
+    padding: 10px;
+}
+
+td {
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    max-width: 900px;
+    border: none;
+    background-color: lightgray;
 }
 
-.payment{
-	border:1px solid rgb(0, 0, 0);
-	height:60px;
-    border-radius:10px;
-}
-.check img{
-    display: block;
-    margin: 0 auto;
-    border-radius: 20px;
-}
-.payment_header{
-	background: rgb(247, 173, 69);
-	padding:20px;
-    border-radius:20px 20px 0px 0px;
-}
-.content {
-    color: #ddd;
+::placeholder {
     text-align: center;
-}
-
-#backbutton {
-    background-color: rgb(247, 173, 69);
-    color: #ddd;
-    padding: 20px;
-    width: 300px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-#backbutton:hover {
-    background-color: rgb(247, 173, 69);
-    color: #ddd;
-    padding: 20px;
-    width: 300px;
-    border-radius: 20px;
-    cursor: pointer;
-    opacity: 0.7;
 }
 
 .separator {
@@ -280,4 +104,35 @@ table {
     height: 1px;
     background-color: #333;
     margin-top: 32px;
+}
+
+.payment-success-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 999;
+}
+
+/* Styles for the payment success card */
+.payment-success-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Additional styles for the card content (e.g., h2, p, etc.) */
+.payment-success-card h2 {
+    color: #22b573;
+}
+
+.payment-success-card p {
+    margin: 10px 0;
 }
