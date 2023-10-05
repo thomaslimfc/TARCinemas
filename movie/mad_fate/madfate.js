@@ -1,4 +1,9 @@
+const movie = ("[MAD FATE]");
+
 function buyticket(){
+    //pass value to next page
+    localStorage.setItem("movieselected",movie);
+    
     location.href = "../../html/upcoming_buyticket.html";
 }
 

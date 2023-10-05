@@ -1,4 +1,9 @@
+const movie = ("[THE WHITE STORM 3]");
+
 function buyticket(){
+    //pass value to next page
+    localStorage.setItem("movieselected",movie);
+    
     location.href = "../../html/showingnow_buyticket.html";
 }
 
