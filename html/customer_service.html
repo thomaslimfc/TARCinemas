@@ -19,25 +19,25 @@
     <div>
         <div class="topnav" id="myTopnav">
             <ul>
-                <ul>
-                    <li class="logo_bg" style="float:left;">
+                <li class="logo_bg" style="float:left; width: 25%;">
                         <a href="../index.html" class="logo_header" class="active" width="100%">
-                          <span>TAR</span>Cinemas&#174
+                            <span id="header">TAR</span>Cinemas&#174
                         </a>
                         <!-- <a href="index.html" class="logo_header" class="active" width="150%">
                             <img src="images/tarc_logo.png" height="150px">
                         </a> -->
-                    </li>
-                    <div style="float:right;">
+                </li>
+                <div style="float:right; height: 100px;padding-top: 15px;">
                         <li><a href="../html/movies.html">Movies</a></li>
                         <li><a href="../html/food.html">Food</a></li>
-                        <li><a href="../html/experience">Experience</a></li>
+                        <li><a href="../html/halltype.html">Experiences</a></li>
     
                         <li class="dropdown">
                             <a href="javascript:void(0)" class="dropbtn">
                                 About
                             </a>
                             <div class="dropdown-content">
+                                <a href="../html/about_us.html">TAR Cinema</a>
                                 <a href="../html/customer_service.html" >Customer Service</a>
                                 <a href="../html/faq.html">FAQs</a>
                             </div>
@@ -51,8 +51,7 @@
                             <a href="../html/sign_in.html" class="buyNow_button" id="navSign_button"
                             class="moviePosterContainer_overlayText">Sign in</a>
                          </li>
-                    </div>
-                </ul>
+                </div>
             </ul>
         </div>
     </div>
@@ -81,12 +80,12 @@
             <td colspan="2">
                 <center>
                     <div style="padding: 15px;">
-                        <img src="../images/images.map.png" alt="imagesMap" width="250px" height="220px" usemap="#imageMap" style="border-radius: 20px; border: 3px solid #0c0c09;">
+                        <img src="../images/images.map.png" alt="imagesMap" width="450px" height="420px" usemap="#imageMap" style="border-radius: 20px; border: 3px solid #0c0c09;">
                     </div>
                 
                     <map name="imageMap">
-                        <area shape="circle" coords="75, 48, 6"  alt="Penang" href="#Penang" onclick="goMap()">
-                        <area shape="circle" coords="130, 125, 6"  alt="KualaLumpur" href="#KualaLumpur" onclick="goMap1()">
+                        <area shape="circle" coords="135,100,40"  alt="Penang" href="https://maps.app.goo.gl/wLae1fE3pvrVWdjm9">
+                        <area shape="circle" coords="235, 240, 30"  alt="KualaLumpur" href="https://maps.app.goo.gl/v5ckBSVpZjyZ6Hk86">
                     </map>
                 </center>
             </td>
@@ -98,7 +97,9 @@
             <td class="col2">
                 <div class="KualaLumpur">
                     <span id="KualaLumpur">
+                        <a href="https://maps.app.goo.gl/v5ckBSVpZjyZ6Hk86" style="color: rgb(210, 153, 92); text-decoration: none">
                         <p style="color: #0c0c09;">Ground Floor,<br>Bangunan Tan Sri Khaw Kai Boh (Block A),<br>Jalan Genting Kelang,<br>Setapak, 53300 Kuala Lumpur,<br>Federal Territory of Kuala Lumpur.</p>
+                        </a>
                     </span>
                 </div>
             </td>
@@ -223,14 +224,14 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="file" name="fileName" accept="file_type">
+                    <input type="file" name="fileName" accept="file_type" style="font-size: 15px; padding: 5px;">
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
                     <div style="text-align: left;">
                         <input type="checkbox" id="confirmBox" name="confirm" required
-                        style="width: 40px;">
+                        style="width: 20px;">
 
                         &nbsp;
 
@@ -239,8 +240,6 @@
                 </td>
             </tr>
         </table>
-
-        <br>
 
         <div>
             <button type="submit" class="submit_button" onclick="validatesubmit()">SUBMIT</button>
@@ -287,40 +286,6 @@ function validatesubmit() {
             alert("Please fill in all fields.");
         }
     }
-
-    var PN_Active = false;
-    var KL_Active = false;
-
-    function goMap() {
-      var PN = document.getElementById("Penang");
-      var KL = document.getElementById("KualaLumpur");
-
-      if (!PN_Active) {
-        PN.style.display = "block";
-        KL.style.display = "none";
-        PN_Active = true;
-        KL_Active = false;
-      } else {
-        PN.style.display = "none";
-        PN_Active = false;
-      }
-    }
-
-    function goMap1() {
-      var PN = document.getElementById("Penang");
-      var KL = document.getElementById("KualaLumpur");
-
-      if (!KL_Active) {
-        KL.style.display = "block";
-        PN.style.display = "none";
-        KL_Active = true;
-        PN_Active = false;
-      } else {
-        KL.style.display = "none";
-        KL_Active = false;
-      }
-    }
-
     </script> 
 
     <footer>

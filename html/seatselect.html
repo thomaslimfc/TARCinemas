@@ -14,27 +14,27 @@
         <div>
             <div class="topnav" id="myTopnav">
                 <ul>
-                    <ul>
-                        <li class="logo_bg" style="float:left;">
+                    <li class="logo_bg" style="float:left; width: 25%;">
                             <a href="../index.html" class="logo_header" class="active" width="100%">
-                              <span>TAR</span>Cinemas&#174
+                                <span id="header">TAR</span>Cinemas&#174
                             </a>
                             <!-- <a href="index.html" class="logo_header" class="active" width="150%">
                                 <img src="images/tarc_logo.png" height="150px">
                             </a> -->
-                        </li>
-                        <div style="float:right;">
+                    </li>
+                    <div style="float:right; height: 100px;padding-top: 15px;">
                             <li><a href="../html/movies.html">Movies</a></li>
                             <li><a href="../html/food.html">Food</a></li>
-        
+							<li><a href="../html/halltype.html">Experiences</a></li>
         
                             <li class="dropdown">
                                 <a href="javascript:void(0)" class="dropbtn">
                                     About
                                 </a>
                                 <div class="dropdown-content">
-                                    <a href="../html/customer_service.html" target="_blank">Customer Service</a>
-                                    <a href="../html/faq.html" target="_blank">FAQs</a>
+                                    <a href="../html/about_us.html">TAR Cinema</a>
+                                    <a href="../html/customer_service.html" >Customer Service</a>
+                                    <a href="../html/faq.html">FAQs</a>
                                 </div>
                                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
                             </li>
@@ -43,11 +43,10 @@
                                 <a href="../html/profileDetails.html" class="profile_imgButton"><img src="../images/profile_icon.png" alt="" height="25px"></a>
                              </li>
                              <li>
-                                <a href="../html/sign_in.html" target="_blank" class="buyNow_button" id="navSign_button"
+                                <a href="../html/sign_in.html" class="buyNow_button" id="navSign_button"
                                 class="moviePosterContainer_overlayText">Sign in</a>
                              </li>
-                        </div>
-                    </ul>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -55,10 +54,26 @@
     
     <div>
         <div>
-            <h1>Seat Selection</h1>
+            <table style="width: 100%;">
+                <tr>
+                    <th style="float: left;"><h1>Seat Selection</h1></th>
+                    <th><span style="margin-left: 30px;"></span></th>
+                    <th style="text-align: right;">
+                        <span class="movie" id="movie"></span>
+                    </th>
+                </tr>
+            </table>
         </div>
-      
         <div id="seatselect">
+            <div>
+                <span style="color: #F6B162;" class="hall">HALL - </span>
+                <span class="hall" id="hall"></span>
+            </div>
+            <div>
+                <span style="color: #F6B162;" class="date">DATE / TIME - </span>
+                <span class="date" id="date"></span>
+                <span class="time" id="time"></span>
+            </div>
           <ul class="label">
             <li>
               <div class="seat"></div>
@@ -132,8 +147,8 @@
               <div class="seat sold"></div>
               <div class="seat"></div>
               <div class="seat"></div>
-              <div class="seat sold"></div>
-              <div class="seat sold"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
               <div class="seat"></div>
               <div class="seat"></div>
             </div>
@@ -143,6 +158,7 @@
           </div>
         </div>
     </div>
+    
     <script src="../js/seat.js"></script>
 
     <footer style="display: block; padding-top: 20px;">

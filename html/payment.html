@@ -11,37 +11,36 @@
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../css/index.css"/>
     <link rel="stylesheet" type="text/css" href="../css/payment.css"/>
-    <link rel="icon" href="/TARCinemas/images/tarc_logo.png">
+    <link rel="icon" href="../images/tarc_logo.png">
     <title>TAR Cinemas</title>
 </head>
 
-<script src="../js/payment.js"></script>
 <body>
     <nav>
         <div>
             <div class="topnav" id="myTopnav">
                 <ul>
-                    <ul>
-                        <li class="logo_bg" style="float:left;">
+                    <li class="logo_bg" style="float:left; width: 25%;">
                             <a href="../index.html" class="logo_header" class="active" width="100%">
-                              <span>TAR</span>Cinemas&#174
+                                <span id="header">TAR</span>Cinemas&#174
                             </a>
                             <!-- <a href="index.html" class="logo_header" class="active" width="150%">
                                 <img src="images/tarc_logo.png" height="150px">
                             </a> -->
-                        </li>
-                        <div style="float:right;">
+                    </li>
+                    <div style="float:right; height: 100px;padding-top: 15px;">
                             <li><a href="../html/movies.html">Movies</a></li>
                             <li><a href="../html/food.html">Food</a></li>
-        
+							<li><a href="../html/halltype.html">Experiences</a></li>
         
                             <li class="dropdown">
                                 <a href="javascript:void(0)" class="dropbtn">
                                     About
                                 </a>
                                 <div class="dropdown-content">
-                                    <a href="../html/customer_service.html" target="_blank">Customer Service</a>
-                                    <a href="../html/faq.html" target="_blank">FAQs</a>
+                                    <a href="../html/about_us.html">TAR Cinema</a>
+                                    <a href="../html/customer_service.html" >Customer Service</a>
+                                    <a href="../html/faq.html">FAQs</a>
                                 </div>
                                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
                             </li>
@@ -50,158 +49,170 @@
                                 <a href="../html/profileDetails.html" class="profile_imgButton"><img src="../images/profile_icon.png" alt="" height="25px"></a>
                              </li>
                              <li>
-                                <a href="../html/sign_in.html" target="_blank" class="buyNow_button" id="navSign_button"
+                                <a href="../html/sign_in.html" class="buyNow_button" id="navSign_button"
                                 class="moviePosterContainer_overlayText">Sign in</a>
                              </li>
-                        </div>
-                    </ul>
+                    </div>
                 </ul>
             </div>
         </div>
     </nav>
     
     <div class="big_container">
-        <div class="container_pay">
 
-            <h2 style="color: white; text-align:center; padding-top:20px;">Payment Method Selection</h2>
-    
-            <form class="payment_option">
-    
-                <div class="payment_choice">
-                    <ul> 
-                        <li class="payment_c active"> 
-                            <a class="cardButton" href="#" onclick="openCard()">
-                                Card Payment
-                            </a> 
-                        </li> 
-                        <li class="payment_c"> 
-                            <a class="qrButton" href="#" onclick="openQR()">
-                                QR Payment
-                            </a> 
-                        </li> 
-                        <li class="payment_c"> 
-                            <a class="fpxButton" href="#" onclick="openFPX()">
-                                FPX Payment
-                            </a> 
-                        </li> 
-                        <li class="payment_c"> 
-                            <a class="transferButton" href="#" onclick="openBTransfer()">
-                                Bank Transfer
-                            </a> 
-                        </li> 
-                    </ul> 
-                </div>
-    
-                <form action=""> 
-                    <div class="allForm">
-                        <div id="cardForm" class="payment_method">
-                            <table>
-                                <h2 style="color:white; text-align:center;">CARD PAYMENT</h2>
-                                <div class="separator"></div>
-                                <tr>
-                                    <th>First Name   : </th>
-                                    <td><input type="text" placeholder="Winnie"></td>
-                                    <th>Last Name   : </th>
-                                    <td><input type="text" placeholder="Chiong Yan"></td>
-                                </tr>
-                                <tr>
-                                    <th  colspan="2" >Card Type : </th>
-                                    <td  style="padding-left:20px;"><input type="radio" placeholder="" name="radioPick"><img src="../images/visa.png"></td>
-                                    <td  style="padding-left:20px;"><input type="radio" placeholder="" name="radioPick"><img src="../images/mastercard.png"></td>
-                                    <td  style="padding-left:20px;"><input type="radio" placeholder="" name="radioPick"><img src="../images/american-express.png"></td>
-                                </tr>
-                                <tr>
-                                    <th>Card Number : </th>
-                                    <td><input type="text" placeholder="1111 2222 3333 4444"></td>
-                                </tr>
-                                <tr>
-                                    <th>Code CVV    : </th>
-                                    <td><input type="password" placeholder="123"></td>
-                                    <th>EXP DATE    : </th>
-                                    <td><input type="month" placeholder=""></td>
-                                </tr>
-                            </table>
-                        </div>
-    
-                        <div id="qrForm" class="payment_method">
-                            <table>
-                                <h2 style="color:white; text-align:center;">QR CODE PAYMENT</h2>
-                                <div class="separator"></div>
-                                <tr>
-                                    <div class="qrqr">
-                                        <img id="qrCode" src="../images/QR code.jpg" alt="QR code">
-                                    </div>
-                                </tr>
-                                <tr>
-                                    <td><input type="file" id="myFile" name="filename"></td>
-                                </tr>
-                            </table>
-                        </div>
-    
-                        <div id="fpxForm" class="payment_method">
-                            <table>
-                                <h2 style="color:white; text-align:center;">FPX ONLINE PAYMENT</h2>
-                                <div class="separator"></div>
-                                <div class="bank_type">
-                                    <a href="https://www.maybank2u.com.my/home/m2u/common/login.do" ><img src="../images/maybank.png" alt="MAYBANK" class="bank_type_img"></a>
-                                    <p>MAYBANK</p>
-                                </div>
-                                <div class="bank_type">
-                                    <a href="https://www.cimbclicks.com.my/clicks/#/" ><img src="../images/cimb.png" alt="CIMB" class="bank_type_img"></a>
-                                    <p>CIMB</p>
-                                </div>
-                                <div class="bank_type">
-                                    <a href="https://www2.pbebank.com/myIBK/apppbb/servlet/BxxxServlet?RDOName=BxxxAuth&MethodName=login"><img src="../images/pbe.png" alt="PUBLIC BANK" class="bank_type_img"></a>
-                                    <p>PBE</p>
-                                </div>
-                                <div class="bank_type">
-                                    <a href="https://s.hongleongconnect.my/rib/app/fo/login?web=1" ><img src="../images/hlb.png" alt="HONG LEONG BANK" class="bank_type_img"></a>
-                                    <p>HONGLEONG</p>
-                                </div>
-                                <div class="bank_type">
-                                    <a href="https://onlinebanking.rhbgroup.com/my/login?_ga=2.133914958.1381074435.1696004508-89784855.1685611820" ><img src="../images/rhb.png" alt="RHB BANK" class="bank_type_img"> </a>
-                                    <p>RHB</p>
-                                </div>
-                            </table>
-                        </div>
-    
-                        <div id="bankTransferForm" class="payment_method">
-                            <table>
-                                <h2 style="color:white; text-align:center;">ONLINE BANK TRANSFER</h2>
-                                <div class="separator"></div>
-                                <tr>
-                                    <th>Bank Name : </th>
-                                    <td>MAYBANK</td>
-                                </tr>
-                                <tr colspan="2">
-                                    <th>Account Number: </th>
-                                    <td>0070 8638 9746</td>
-                                </tr>
-                                <tr>
-                                    <th>Account Name : </th>
-                                    <td>TAR Cinema</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="file" id="myFile" name="filename"></td>
-                                </tr>
-                            </table>
-                        </div>
-                        
-                    
-    
+        <div class="orderdetails">
+            <table class="payment-method-table">
+                <tr>
+
+                    <table class="payment-method-purchase2"></table>
+                    <div class="order-details-purchase">
+                        <ul>
+                            <li style="width: 100%;"><a href="#" class="payment-method-purchase"
+                                    class="card-button">PURCHASE</a></li>
+                        </ul>
+
+                        <table>
+                            <tr style="color:white;">
+                                <td>
+                                    <p>Movie</p>
+                                </td>
+                                <td>:</td>
+                                <td><span id="movieselected"></span></td>
+                            </tr>
+                            <tr style="color:white;">
+                                <td>
+                                    <p>Hall</p>
+                                </td>
+                                <td>:</td>
+                                <td><span id="hallselected"></span></td>
+                            </tr>
+                            <tr style="color:white;">
+                                <td>
+                                    <p>Date</p>
+                                </td>
+                                <td>:</td>
+                                <td><span id="dateselected"></span></td>
+                            </tr>
+                            <tr style="color:white;">
+                                <td>
+                                    <p>Time</p>
+                                </td>
+                                <td>:</td>
+                                <td><span id="timeselected"></span></td>
+                            </tr>
+                            <tr style="color:white;">
+                                <td>
+                                    <p>Number of Tickets</p>
+                                </td>
+                                <td>:</td>
+                                <td><span id="seatselected"></span></td>
+                            </tr>
+                            <tr style="color:white;">
+                                <td>
+                                    <p>Subtotal</p>
+                                </td>
+                                <td>:</td>
+                                <td>RM<span id="subtotal"></span></td>
+                            </tr>
+
+                            <div class="separator"></div>
+                           
                     </div>
-    
-                    <div class="proceedpay">
-                        <div class="payment_button" id="payment_button" onclick="confirmOrder()"> 
-                            <a href="paymentsuccess.html">
-                                PAYMENT
-                            </a>
-                        </div>
-                        
-                    </div>
-                </form>
-            </form>
+            </table>
+
+            
+            <div class="confirmpay-button">
+                <table>
+                    <tr id="confirmpay-button">
+                        <td>
+                            <button type="button" id="cont_button" onclick="confirmContinue()" style="float:right;background-color: #F6B162; 
+                                    border-radius:5px; cursor:pointer; padding:10px; min-width:150px;font-family: 'Tcfont-Black';">
+                                Proceed Payment
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" id="back_button" onclick="goBack()" style="float:right;background-color: #F6B162; 
+                                    border-radius:5px; cursor:pointer; padding:10px; min-width:150px;font-family: 'Tcfont-Black';">
+                                Back 
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+
+
         </div>
     </div>
     
+<script src="../js/payment.js"></script>
 </body>
+
+
+<footer>
+    <!-- Company Information -->
+    <center>
+        <div>
+            <a href="index.html" id="logo_footer" class="active" width="100px">
+                <span>TAR</span>Cinemas&#174
+            </a>
+            <p id="business_name">TAR Cinemas (Penang) Sdn. Bhd.
+                <br>
+                <span class="ssm_regNumber">195901000262 (8888-M)</span>
+            </p>
+            <p>
+                <a id="address" href="https://www.google.com/maps/place/Tunku+Abdul+Rahman+University+College/@3.2161697,101.7268329,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc3843bfb6a031:0x2dc5e067aae3ab84!8m2!3d3.2161643!4d101.7290216">
+                77, Lorong Lembah Permai 3,
+                <br>
+                11200 Tanjung Bungah,
+                <br>
+                Pulau Pinang, Malaysia.
+                </a>
+            </p>                
+        </div>
+    </center>
+
+    <br>
+
+    <div>
+        <center>
+            <table class="socialMedia_container">
+                <tr>
+                    <td>
+                        <h3>Follow Us On</h3>
+                    </td>
+                    <td></td><td></td><td></td>
+                    <td>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="../images/facebook.png" alt="Facebook" height="30px">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://twitter.com/?lang=en" target="_blank">
+                            <img src="../images/twitter.png" alt="Twitter" height="30px">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                            <img src="../images/instagram.png" alt="Instagram" height="30px">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+
+    <hr>
+
+    <center>
+        <h5>
+            Copyright &#169; 2023 TAR Cinemas (Penang) Sdn. Bhd.
+            <br>
+            All rights reserved.
+        </h5>
+    </center>
+
+    <hr>
+    <br>
+</footer>
+</html>

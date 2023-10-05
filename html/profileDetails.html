@@ -22,27 +22,27 @@
         <div>
             <div class="topnav" id="myTopnav">
                 <ul>
-                    <ul>
-                        <li class="logo_bg" style="float:left;">
+                    <li class="logo_bg" style="float:left; width: 25%;">
                             <a href="../index.html" class="logo_header" class="active" width="100%">
-                              <span>TAR</span>Cinemas&#174
+                                <span id="header">TAR</span>Cinemas&#174
                             </a>
                             <!-- <a href="index.html" class="logo_header" class="active" width="150%">
                                 <img src="images/tarc_logo.png" height="150px">
                             </a> -->
-                        </li>
-                        <div style="float:right;">
+                    </li>
+                    <div style="float:right; height: 100px;padding-top: 15px;">
                             <li><a href="../html/movies.html">Movies</a></li>
                             <li><a href="../html/food.html">Food</a></li>
-        
+							<li><a href="../html/halltype.html">Experiences</a></li>
         
                             <li class="dropdown">
                                 <a href="javascript:void(0)" class="dropbtn">
                                     About
                                 </a>
                                 <div class="dropdown-content">
-                                    <a href="../html/customer_service.html" target="_blank">Customer Service</a>
-                                    <a href="../html/faq.html" target="_blank">FAQs</a>
+                                    <a href="../html/about_us.html">TAR Cinema</a>
+                                    <a href="../html/customer_service.html" >Customer Service</a>
+                                    <a href="../html/faq.html">FAQs</a>
                                 </div>
                                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
                             </li>
@@ -51,274 +51,234 @@
                                 <a href="../html/profileDetails.html" class="profile_imgButton"><img src="../images/profile_icon.png" alt="" height="25px"></a>
                              </li>
                              <li>
-                                <a href="../html/sign_in.html" target="_blank" class="buyNow_button" id="navSign_button"
+                                <a href="../html/sign_in.html" class="buyNow_button" id="navSign_button"
                                 class="moviePosterContainer_overlayText">Sign in</a>
                              </li>
-                        </div>
-                    </ul>
+                    </div>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-
-        <div id="profileDetails" class="acc_container">
-            <section class="userChoice">
-                <div class="memberAccountside"> 
-                    <div class="profilePic">
-                        <figure><img src="../images/profilepic.png"></figure>
-                    </div>
-                    <div class="username">
-                        <span>
-                            Winnie
-                        </span>
-                    </div>
-    
-                    <div class="separator"></div> <!-- a small separator created -->
-    
-                    <div class="menuWrapper">
-                        <p class="wrapperTitle">&nbsp;&nbsp;&nbsp;Payment Management</p>
-                        <div class="wrapperstgt">
-                            <div class="wrappers">
+        <div class="big_container">
+            <div id="profileDetails" class="acc_container">
+                <section class="userChoice">
+                    <div class="memberAccountside" > 
+                        <div class="menuWrapper"  style="border-radius:10px">
+                            <div class="wrappers" >
                                 <ul>
                                     <li class="profile_d">
                                         <a class="addCard_button" href="#" onclick="openAddCard()">
-                                            Add Card
-                                        </a>
-                                    </li>
-                                    <li class="profile_d">
-                                        <a class="buyNow_but" href="../html/movies.html">
-                                            Buy Now
+                                            Card
                                         </a>
                                     </li>
                                     <li class="profile_d">
                                         <a class="myTicket_button" href="#" onclick="openTicket()">
-                                            My Tickets
+                                            Tickets
                                         </a>
                                     </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="menuWrapper">
-                        <p class="wrapperTitle">&nbsp;&nbsp;&nbsp;Account Control</p>
-                        <div class="wrapperstgt">
-                            <div class="wrappers">
-                                <ul>
                                     <li class="profile_d">
                                         <a class="profileDetails_button" href="#" onclick="openProfile()">
                                             Profile
                                         </a>
                                     </li>
                                     <li class="profile_d">
-                                        <a class="bankDetails_button" href="../html/about_us.html">
-                                            TAR Cinemas
+                                        <a class="security_button" href="#" onclick="openSecurity()">
+                                            Security
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                
+                <div class="accountMain" >
+                    
+        
+                    <section class="userDetails" id="userdetails" style="display: block;">
+                        <form action="" class="details_form" style="padding: 50px; margin-top:20px">
+                            <table style="color:white;text-align:left;">
+
+                                <div class="memberDetails">
+                                    <h3 style="color:white;padding-left:20px;">
+                                        Account Info
+                                    </h3>
+                                </div>
+                                <div class="separator"></div> 
             
-            <div class="accountMain" >
-                <section class="memberShip">
-                    <div class="memberLevel" style="width:40%;">
-                        <div class="goldmember">
-                            <img src="../images/membergold.png" style="border-radius: 25px; width: 100%; padding:10px;">
-                        </div>
-                    </div>
-                    <div class="memberLVL" style="font-size:10px;">
-                        <h3>
-                           Current Membership Level : Gold 
-                        </h3>
-                        <p>
-                            <i>1,500 more points to achieve Platinum</i>
-                        </p>
-                    </div>
-                </section>
-    
-                <section class="userDetails" id="userdetails" style="display: block;">
-                    <div class="memberDetails">
-                        <h3 style="color:white;padding-left:20px;">
-                            Account Info
-                        </h3>
-                    </div>
-                    <div class="separator"></div> 
-
-                    <form action="" class="details_form">
-                        <div class="infoinfo">
-                            <label>Username:</label>
-                            <input type="text" placeholder=" winnie618"  readonly>
-                        </div>
-                        <div class="infoinfo">
-                            <label>Full Name:</label>
-                            <input type="text" placeholder=" Winnie Chiong Yan"  readonly>
-                        </div>
-                        <div class="infoinfo">
-                            <label>Email:</label>
-                            <input type="email" placeholder=" winnie618@example.com"  readonly>
-                        </div>
-                       <div class="infoinfo">
-                            <label>Phone Number:</label>
-                            <input type="text" placeholder=" 016-406 3666"  readonly>
-                       </div>
-                        <div class="infoinfo">
-                            <label>Nickname:</label>
-                            <input type="text" placeholder=" winnie618"  readonly>
-                        </div>
-                        <div class="infoinfo">
-                            <label>Date of Birth:</label>
-                            <input type="date" >
-                        </div>
-
-                       
-                    </form>
-
-                    <div class="memberDetails">
-                        <h3 style="color:white;padding-left:20px;">
-                            Security
-                        </h3>
-                    </div>
-                    <div class="separator"></div> 
-
-                    <form>
-                        <div class="infoinfo">
-                            <label>Current Password:</label>
-                            <input type="password" id="oldpass">
-                        </div>
-                        <div class="infoinfo">
-                            <label>New Password:</label>
-                            <input type="password" id="newpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number and 1 uppercase and lowercase letter, and at least 8 or more characters">
-                        </div>
-                        <div class="infoinfo">
-                            <label>Confirm Password:</label>
-                            <input type="password" id="checknewpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number and 1 uppercase and lowercase letter, and at least 8 or more characters">
-                        </div>
-                        <div class="button_edit">
-                            <button type="submit" id="edit_button" style="background-color:#c85209;width:100px;border-radius:20px;height:30px;margin-left:45%;"> SUBMIT</button>
-                        </div>
-                    </form>
-                </section>
-
-                <section class="addCard" style="display: none;" id="addcardForm">
-                    <div class="cardDetails">
-                        <h3 style="color:white;padding-left:20px;">
-                            Add Card
-                        </h3>
-                    </div>
-                    <div class="separator"></div> 
-                    <div class="wrapper">
-                        <div class="credit-card" id="card">
-                          <div class="card-front">
-                            <div class="branding">
-                              <img src="../images/chip.png" class="chip-img" style="border-radius:5px;"/>
-                            </div>
-                            <div class="card-number">
-                              <div>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                              </div>
-                              <div>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                              </div>
-                              <div>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                              </div>
-                              <div>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                                <span class="card-number-display">_</span>
-                              </div>
-                            </div>
-                            <div class="details">
-                              <div>
-                                <span>Card Holder</span>
-                                <span id="card-holder-name">Your Name Here</span>
-                              </div>
-                              <div>
-                                <span>Expires</span>
-                                <span id="validity">06/28</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-back">
-                            <div class="black-strip"></div>
-                            <div class="white-strip">
-                              <span>CVV</span>
-                              <div id="cvv-display"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <form>
-                          <label for="card-number">Card Number</label>
-                          <input type="number" id="card-number" placeholder="1234123412341234" />
-                          <label for="card-holder">Card Holder:</label>
-                          <input type="text" id="card-name-input" placeholder="Your Name" />
-                          <div class="date-cvv">
-                            <div>
-                              <label for="validity">Expires On:</label>
-                              <input type="date" id="validity-input" />
-                            </div>
-                            <div>
-                              <label for="cvv">CVV:</label>
-                              <input type="number" id="cvv" placeholder="***" />
-                            </div>
-                          </div>
+                                <form action="" class="details_form">
+                                    <div class="infoinfo">
+                                        <label>Username:</label>
+                                        <input type="text" placeholder=" winnie618"  readonly>
+                                    </div>
+                                    <div class="infoinfo">
+                                        <label>Full Name:</label>
+                                        <input type="text" placeholder=" Winnie Chiong Yan"  readonly>
+                                    </div>
+                                    <div class="infoinfo">
+                                        <label>Email:</label>
+                                        <input type="email" placeholder=" winnie618@example.com"  readonly>
+                                    </div>
+                                   <div class="infoinfo">
+                                        <label>Phone Number:</label>
+                                        <input type="text" placeholder=" 016-406 3666"  readonly>
+                                   </div>
+                                    <div class="infoinfo">
+                                        <label>Date of Birth:</label>
+                                        <input type="date" >
+                                    </div>
+        
+                            </table>
                         </form>
-                      </div>
-                </section>
+                    </section>
 
-                <section class="my_tickets" style="display: none;" id="addticketForm">
-                    <div class="cardDetails">
-                        <h3 style="color:white;padding-left:20px;padding-top:50px;">
-                            My Tickets 
-                        </h3>
-                    </div>
+                    <section class="securityD" id="security" style="display: none;">
+                        <form style="padding: 0px 50px 50px 50px;">
+                            <div class="memberDetails">
+                                <h3 style="color:white;padding-left:20px;">
+                                    Security
+                                </h3>
+                            </div>
+                            <div class="separator"></div> 
+                            <div class="infoinfo">
+                                <label>Current Password:</label>
+                                <input type="password" id="oldpass">
+                            </div>
+                            <div class="infoinfo">
+                                <label>New Password:</label>
+                                <input type="password" id="newpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number and 1 uppercase and lowercase letter, and at least 8 or more characters">
+                            </div>
+                            <div class="infoinfo">
+                                <label>Confirm Password:</label>
+                                <input type="password" id="checknewpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number and 1 uppercase and lowercase letter, and at least 8 or more characters">
+                            </div>
+                            <div class="button_edit">
+                                <button type="submit" id="edit_button" style="background-color:#F6B162; width:100px; border-radius:5px; height:50px; margin-left:40%; padding:10px; font-family: 'Tcfont-Black';color: black;"> SUBMIT</button>
+                            </div>
+                        </form>
+                    </section>
+    
+                    <section class="addCard" style="display: none;" id="addcardForm">
 
-                    <div class="ticketwrap">
-                        <div class="ticket ticketLeft">
-                          <h1>TAR <span>Cinema</span></h1>
-                          <div class="title">
-                            <h2>No More Bets</h2>
-                            <span>movie</span>
+                        <div class="separator"></div> 
+                        <div class="wrapper">
+                            <div class="credit-card" id="card">
+                              <div class="card-front">
+                                <div class="branding">
+                                  <img src="../images/chip.png" class="chip-img" style="border-radius:5px;"/>
+                                </div>
+                                <div class="card-number">
+                                  <div>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                  </div>
+                                  <div>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                  </div>
+                                  <div>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                  </div>
+                                  <div>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                    <span class="card-number-display">_</span>
+                                  </div>
+                                </div>
+                                <div class="details">
+                                  <div>
+                                    <span>Card Holder</span>
+                                    <span id="card-holder-name">Your Name Here</span>
+                                  </div>
+                                  <div>
+                                    <span>Expires</span>
+                                    <span id="validity">06/28</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-back">
+                                <div class="black-strip"></div>
+                                <div class="white-strip">
+                                  <span>CVV</span>
+                                  <div id="cvv-display"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <form method="post">
+                              <label for="card-number">Card Number</label>
+                              <input type="number" id="card-number" placeholder="" />
+                              <label for="card-holder">Card Holder:</label>
+                              <input type="text" id="card-name-input" placeholder="" />
+                              <div class="date-cvv">
+                                <div>
+                                  <label for="validity">Expiry Date:</label>
+                                  <input type="month" id="validity-input" placeholder="MM/YY"/>
+                                </div>
+                                <div>
+                                  <label for="cvv">CVV:</label>
+                                  <input type="password" id="cvv" placeholder="***" />
+                                </div>
+                              </div>
+                              <div class="confirmpay-button">
+                                <table>
+                                    <tr id="confirmpay-button">
+                                        <th colspan="9"><button type="button" id="payment_button" onclick="confirmOrder()"
+                                                style="background-color: #F6B162; border-radius:5px; cursor:pointer; padding:10px; font-family: 'Tcfont-Black';color: black;">Confirm
+                                                Edit</button></th>
+
+                                    </tr>
+                                </table>
+                            </div>
+                            </form>
                           </div>
-                          <div class="name">
-                            <h2>Winnie Chiong</h2>
-                            <span>name</span>
-                          </div>
-                          <div class="seat">
-                            <h2>B21</h2>
-                            <span>seat</span>
-                          </div>
-                          <div class="time">
-                            <h2>05:20</h2>
-                            <span>time</span>
-                          </div>
+                    </section>
+    
+                    <section class="my_tickets" style="display: none;" id="addticketForm">
+
+    
+                        <div class="ticketwrap">
+                            <div class="ticket ticketLeft">
+                              <h1>TAR <span>Cinema</span></h1>
+                              <div class="title">
+                                <h2>No More Bets</h2>
+                                <span>movie</span>
+                              </div>
+                              <div class="name">
+                                <h2>Winnie Chiong</h2>
+                                <span>name</span>
+                              </div>
+                              <div class="seat">
+                                <h2>B21</h2>
+                                <span>seat</span>
+                              </div>
+                              <div class="time">
+                                <h2>05:20</h2>
+                                <span>time</span>
+                              </div>
+                            </div>
+                            <div class="ticket ticketRight">
+                              <div class="eye"></div>
+                              <div class="number">
+                                <h3>B21</h3>
+                                <span>seat</span>
+                              </div>
+                              <div class="barcode"></div>
+                            </div>
+                          
                         </div>
-                        <div class="ticket ticketRight">
-                          <div class="eye"></div>
-                          <div class="number">
-                            <h3>B21</h3>
-                            <span>seat</span>
-                          </div>
-                          <div class="barcode"></div>
-                        </div>
-                      
-                    </div>
-                </section>
-
+                    </section>
+    
+                </div>
+                
             </div>
             
         </div>
@@ -327,6 +287,5 @@
     </main>
 
 </body>
-
 
 </html>

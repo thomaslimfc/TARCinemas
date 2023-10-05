@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Phone size diff need this to adjust -->
+    <link rel="stylesheet" type="text/css" href="../css/index_wc.css" />
+    <link rel="stylesheet" type="text/css" href="../css/payment.css" />
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/general_style.css">
+    <link rel="icon" href="../images/tarc_logo.png">
+    <title>TAR Cinema</title>
+</head>
+
+<script src="../js/payment.js"></script>
+
+<body>
+    <nav>
+        <div>
+            <div class="topnav" id="myTopnav">
+                <ul>
+                    <li class="logo_bg" style="float:left; width: 25%;">
+                            <a href="../index.html" class="logo_header" class="active" width="100%">
+                                <span id="header">TAR</span>Cinemas&#174
+                            </a>
+                            <!-- <a href="index.html" class="logo_header" class="active" width="150%">
+                                <img src="images/tarc_logo.png" height="150px">
+                            </a> -->
+                    </li>
+                    <div style="float:right; height: 100px;padding-top: 15px;">
+                            <li><a href="../html/movies.html">Movies</a></li>
+                            <li><a href="../html/food.html">Food</a></li>
+							<li><a href="../html/halltype.html">Experiences</a></li>
+        
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">
+                                    About
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="../html/about_us.html">TAR Cinema</a>
+                                    <a href="../html/customer_service.html" >Customer Service</a>
+                                    <a href="../html/faq.html">FAQs</a>
+                                </div>
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                            </li>
+                             <!-- <li><a><input id="search-bar"type="text" placeholder="Movies/Cinemas"></a></li>    -->
+                             <li>
+                                <a href="../html/profileDetails.html" class="profile_imgButton"><img src="../images/profile_icon.png" alt="" height="25px"></a>
+                             </li>
+                             <li>
+                                <a href="../html/sign_in.html" class="buyNow_button" id="navSign_button"
+                                class="moviePosterContainer_overlayText">Sign in</a>
+                             </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="big_container">
+
+
+
+
+        <div class="payment-method">
+            <table class="payment-method-table">
+                <div class="payment-method-choice">
+                    <div class="payment-method-button" style="width:100%">
+                        <ul>
+                            <li style="width: 33.33%;"><a href="#" onclick="openCard()" class="payment-method-choice"
+                                    class="card-button">CARD</a></li>
+                            <li style="width: 33.33%;"><a href="#" onclick="openFPX()" class="payment-method-choice"
+                                    class="fpx-button">FPX</a></li>
+                            <li style="width: 33.33%;"><a href="#" onclick="openQR()" class="payment-method-choice"
+                                    class=" qr-button">QR</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="format">
+                    <form onsubmit="event.preventDefault()" style="width: 100%;">
+                        <table id="card-details"
+                            style="display: block; color:white; padding:5px;border-collapse:collapse;">
+                            <div>
+                                <tr>
+                                    <td colspan="9" style="width: 100%;">Name on Card</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9"><input type="name" style="width: 100%;" id="name">
+                                    </td>
+                                    <td id="result"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </div>
+                            <div>
+                                <tr>
+                                    <td colspan="9" for="cardNumber" style="width: 100%;">Card Number
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9"><input type="text" id="cardNumber" name="cardNumber"
+                                            style="width: 100%;" size="18" id="cr_no" minlength="19" maxlength="19">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </div>
+                            <div>
+                                <tr>
+                                    <td colspan="6" style="width: 100%;">Expiration Date</td>
+                                    <td colspan="3" style="width: 100%;">CVV</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"><input type="text" placeholder="MM/YY" size="6" id="exp"
+                                            minlength="5" maxlength="5" width="100%"></td>
+                                    <td colspan="3"><input type="password" size="1" minlength="3" maxlength="3"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </div>
+
+                        </table>
+                    </form>
+                </div>
+
+                <div class="format">
+                    <table id="fpx-details" style="display:none">
+                        <tr class="bank-type" style="text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3"><a href="https://www.maybank2u.com.my/home/m2u/common/login.do"><img
+                                        src="../images/maybank.png" alt="MAYBANK" class="bank_type_img"></a></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr style="color:white;text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3" style="width: 100%;">MAYBANK</td>
+                            <td colspan="3"></td>
+                        </tr>
+
+                        <tr class="bank-type" style="text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3"><a href="https://www.cimbclicks.com.my/clicks/#/"><img
+                                        src="../images/cimb.png" alt="CIMB" class="bank_type_img"></a>
+                            </td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr style="color:white;text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3">CIMB</td>
+                            <td colspan="3"></td>
+                        </tr>
+
+                        <tr class="bank-type" style="text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3"><a
+                                    href="https://www2.pbebank.com/myIBK/apppbb/servlet/BxxxServlet?RDOName=BxxxAuth&MethodName=login"><img
+                                        src="../images/pbe.png" alt="PUBLIC BANK" class="bank_type_img"></a></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr style="color:white;text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3">PBE</td>
+                            <td colspan="3"></td>
+                        </tr>
+
+                        <tr class="bank-type" style="text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3"><a href="https://s.hongleongconnect.my/rib/app/fo/login?web=1"><img
+                                        src="../images/hlb.png" alt="HONG LEONG BANK" class="bank_type_img"></a></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr style="color:white;text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3">HONGLEONG</td>
+                            <td colspan="3"></td>
+                        </tr>
+
+                        <tr class="bank-type" style="text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3"><a
+                                    href="https://onlinebanking.rhbgroup.com/my/login?_ga=2.133914958.1381074435.1696004508-89784855.1685611820"><img
+                                        src="../images/rhb.png" alt="RHB BANK" class="bank_type_img">
+                                </a>
+                            <td colspan="3"></td>
+                            </td>
+                        </tr>
+                        <tr style="color:white;text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3">RHB</td>
+                            <td colspan="3"></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="format">
+                    <table id="qr-details" style="display:none;">
+                        <tr style="text-align:center;">
+                            <td colspan="3"></td>
+                            <td colspan="3"><a href="#"><img src="../images/QR code.jpg"></a></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td><input type="file" id="myFile" name="filename"></td>
+                            <td colspan="3"></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="confirmpay-button">
+                    <table>
+                        <tr id="confirmpay-button">
+                            <th colspan="3"></th>
+                            <th colspan="3"><button type="button" id="payment_button" onclick="confirmOrder()"
+                                    style="background-color: #F6B162; border-radius:5px; cursor:pointer; padding:10px;font-family: 'Tcfont-Black';">Confirm
+                                    Payment</button></th>
+                            <th colspan="3"></th>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </table>
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+</body>
+
+
+
+<footer>
+    <!-- Company Information -->
+    <center>
+        <div>
+            <a href="index.html" id="logo_footer" class="active" width="100px">
+                <span>TAR</span>Cinemas&#174
+            </a>
+            <p id="business_name">TAR Cinemas (Penang) Sdn. Bhd.
+                <br>
+                <span class="ssm_regNumber">195901000262 (8888-M)</span>
+            </p>
+            <p>
+                <a id="address" href="https://www.google.com/maps/place/Tunku+Abdul+Rahman+University+College/@3.2161697,101.7268329,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc3843bfb6a031:0x2dc5e067aae3ab84!8m2!3d3.2161643!4d101.7290216">
+                77, Lorong Lembah Permai 3,
+                <br>
+                11200 Tanjung Bungah,
+                <br>
+                Pulau Pinang, Malaysia.
+                </a>
+            </p>                
+        </div>
+    </center>
+
+    <br>
+
+    <div>
+        <center>
+            <table class="socialMedia_container">
+                <tr>
+                    <td>
+                        <h3>Follow Us On</h3>
+                    </td>
+                    <td></td><td></td><td></td>
+                    <td>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="../images/facebook.png" alt="Facebook" height="30px">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://twitter.com/?lang=en" target="_blank">
+                            <img src="../images/twitter.png" alt="Twitter" height="30px">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                            <img src="../images/instagram.png" alt="Instagram" height="30px">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+
+    <hr>
+
+    <center>
+        <h5>
+            Copyright &#169; 2023 TAR Cinemas (Penang) Sdn. Bhd.
+            <br>
+            All rights reserved.
+        </h5>
+    </center>
+
+    <hr>
+    <br>
+</footer>
+
+</html>

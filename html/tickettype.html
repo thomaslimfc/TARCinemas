@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="../css/tickettype_layout.css">
     <link rel="icon" href="../images/tarc_logo.png">
     <title>Ticket Selection - TARCinema</title>
-    <script src="../js/tickettype.js"></script>
     <link rel="stylesheet" href="../css/general_style.css">
     <link rel="stylesheet" href="../css/navigation.css">
 
@@ -15,27 +14,27 @@
         <div>
             <div class="topnav" id="myTopnav">
                 <ul>
-                    <ul>
-                        <li class="logo_bg" style="float:left;">
+                    <li class="logo_bg" style="float:left; width: 25%;">
                             <a href="../index.html" class="logo_header" class="active" width="100%">
-                              <span>TAR</span>Cinemas&#174
+                                <span id="header">TAR</span>Cinemas&#174
                             </a>
                             <!-- <a href="index.html" class="logo_header" class="active" width="150%">
                                 <img src="images/tarc_logo.png" height="150px">
                             </a> -->
-                        </li>
-                        <div style="float:right;">
+                    </li>
+                    <div style="float:right; height: 100px;padding-top: 15px;">
                             <li><a href="../html/movies.html">Movies</a></li>
                             <li><a href="../html/food.html">Food</a></li>
-        
+							<li><a href="../html/halltype.html">Experiences</a></li>
         
                             <li class="dropdown">
                                 <a href="javascript:void(0)" class="dropbtn">
                                     About
                                 </a>
                                 <div class="dropdown-content">
-                                    <a href="../html/customer_service.html" target="_blank">Customer Service</a>
-                                    <a href="../html/faq.html" target="_blank">FAQs</a>
+                                    <a href="../html/about_us.html">TAR Cinema</a>
+                                    <a href="../html/customer_service.html" >Customer Service</a>
+                                    <a href="../html/faq.html">FAQs</a>
                                 </div>
                                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
                             </li>
@@ -44,23 +43,41 @@
                                 <a href="../html/profileDetails.html" class="profile_imgButton"><img src="../images/profile_icon.png" alt="" height="25px"></a>
                              </li>
                              <li>
-                                <a href="../html/sign_in.html" target="_blank" class="buyNow_button" id="navSign_button"
+                                <a href="../html/sign_in.html" class="buyNow_button" id="navSign_button"
                                 class="moviePosterContainer_overlayText">Sign in</a>
                              </li>
-                        </div>
-                    </ul>
+                    </div>
                 </ul>
             </div>
         </div>
     </nav>
 
+
+
     <div>
         <div>
-            <h1>Ticket Selection</h1>
+            <table style="width: 100%;">
+                <tr>
+                    <th id="title" style="float: left;"><h1>Ticket Selection</h1></th>
+                    <th id="title"><span style="margin-left: 30px;"></span></th>
+                    <th id="title" style="text-align: right;">
+                        <span class="movie" id="movie"></span>
+                    </th>
+                </tr>
+            </table>
         </div>
 
-        <div style="width: 50%; margin: auto; display: flex;">
-            <span style="flex: 1;"></span>
+        <div id="container">
+        <div>
+            <span style="color: #F6B162;" class="hall">HALL - </span>
+            <span class="hall" id="hall"></span>
+        </div>
+        <div>
+            <span style="color: #F6B162;" class="date">DATE / TIME - </span>
+            <span class="date" id="date"></span>
+            <span class="time" id="time"></span>
+        </div>
+        <div>
             <form>
                 <table id="ticket">
                     <tr>
@@ -72,38 +89,56 @@
                     <tr>
                         <th>Kid (<13) : </th>
                         <td></td>
-                        <th><input id="kid" type="number" value="0" max="10" min="0"></th>
-                        <th>+ RM10.00</th>
+                        <th>
+                            <input id="kid" class="ticket" type="number" value="0" max="10" min="0">
+                        </th>
+                        <th>
+                            <span class="price">+ RM </span>
+                            <span class="price" id="kidprice">0</span>
+                        </th>
                     </tr>
                     <tr>
                         <th>Adult: </th>
                         <td></td>
-                        <th><input id="adult" type="number" value="0" max="10" min="0"></th>
-                        <th>+ RM18.00</th>
+                        <th>
+                            <input id="adult" class="ticket" type="number" value="0" max="10" min="0">
+                        </th>
+                        <th>
+                            <span class="price">+ RM </span>
+                            <span class="price" id="adultprice">0</span>
+                        </th>
                     </tr>
                     <tr>
                         <th>Student: </th>
                         <td></td>
-                        <th><input id="stud" type="number" value="0" max="10" min="0"></th>
-                        <th>+ RM12.00</th>
+                        <th>
+                            <input id="student" class="ticket" type="number" value="0" max="10" min="0">
+                        </th>
+                        <th>
+                            <span class="price">+ RM </span>
+                            <span class="price" id="studprice">0</span>
+                        </th>
                     </tr>
                     <tr>
                         <th>Senior / OKU: </th>
                         <td></td>
                         <th>
-                            <input id="senior" type="number" value="0" max="10" min="0">
+                            <input id="senior" class="ticket" type="number" value="0" max="10" min="0">
                         </th>
-                        <th>+ RM10.00</th>
+                        <th>
+                            <span class="price">+ RM </span>
+                            <span class="price" id="seniorprice">0</span>
+                        </th>
                     </tr>
                 </table>
             </form>
-            <span style="flex: 1;"></span>
-        </div>
-        
-        <div>
-            <button id="cart" style="margin-left: 40%;" onclick="cart()">Proceed To Cart</button>
+            <div>
+                <button id="cart" style="margin-left: 30%; margin-top: 50px;" onclick="proceed()">Proceed To Cart</button>
+            </div>
         </div>
     </div>
+    
+    <script src="../js/tickettype.js"></script>
     
     <footer style="display: block; padding-top: 20px;">
         <!-- Company Information -->
