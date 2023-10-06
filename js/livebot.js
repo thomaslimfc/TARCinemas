@@ -6,7 +6,7 @@ const livebotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
 
-const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = liveInput.scrolHeight;
 
 const createLiveLi = (message, className) => {
@@ -49,8 +49,7 @@ const handleLive = () => {
     if(!userMessage) return;
     liveInput.value = "";
     liveInput.style.height = `${inputInitHeight}px`;
-
-
+    
     //Append the user's massage to the livebox
     livebox.appendChild(createLiveLi(userMessage,"outgoing"));
     livebox.scrollTo(0, livebox.scrollHeight);
@@ -61,10 +60,9 @@ const handleLive = () => {
         livebox.appendChild(incomingLiveLi);
         livebox.scrollTo(0, livebox.scrollHeight);
         generateResponse(incomingLiveLi);
-
     }, 600);
-
 }
+
 liveInput.addEventListener("input", () => {
     //Adjust th eheight of the input textarea basedmon its content
     liveInput.style.height = `${inputInitHeight}px`;
@@ -83,4 +81,3 @@ liveInput.addEventListener("keydown", (e) => {
 sendLiveBtn.addEventListener("click",handleLive);
 livebotCloseBtn.addEventListener("click",() => document.body.classList.remove("show-livebot"));
 livebotToggler.addEventListener("click",() => document.body.classList.toggle("show-livebot"));
-
