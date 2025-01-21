@@ -9,5 +9,6 @@
 - Winnie Chiong
 - Tham QL
 - Lim XJ
-- Tang YC<br>
+- Tang YC
+<br>
 Their dedication and expertise made this repository possible, ensuring compatibility and functionality across various components.
